@@ -1,0 +1,5 @@
+<!--pages/acca/index/index.wxml-->
+<image class="img" src="../../../images/homePage.jpeg"></image>
+<view class="title">ACCA</view>
+<view class="top_tip">材料收集指引</view>
+<view class="button" bindtap="next">开始</view>

@@ -1,0 +1,16 @@
+<!--pages/acca/resultFIA1/resultFIA1.wxml-->
+<view class="weui-panel__hd">最终结果</view>
+<view class="weui-panel__bd">
+  <view class="weui-media-box weui-media-box_text" aria-role="option">
+    <text class="weui-media-box__title">FIA</text>
+    <view class="weui-media-box__desc">您的注册身份为FIA</view>
+  </view>
+</view>
+<navigator class="weui-cell weui-cell_active weui-cell_access weui-cell_link" url="/pages/details-fia/details-fia">
+  <text class="weui-cell__bd">FIA是什么？与ACCA的区别</text>
+  <text class="weui-cell__ft"></text>
+</navigator>
+<navigator class="weui-cell weui-cell_active weui-cell_access weui-cell_link" url="/pages/document/fia-1/fia-1?has={{has}}">
+  <text class="weui-cell__bd">查看所需材料</text>
+  <text class="weui-cell__ft"></text>
+</navigator>

@@ -1,5 +1,0 @@
-<!--pages/acca/passport/passport.wxml-->
-<mp-cells ext-class="my-cells" title="是否有护照">
-    <mp-cell value="我有护照" link="true"></mp-cell>
-    <mp-cell value="我没有护照" link="true"></mp-cell>
-</mp-cells>

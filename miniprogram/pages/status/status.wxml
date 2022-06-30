@@ -1,0 +1,8 @@
+<!--pages/acca/status/status.wxml-->
+<mp-cells ext-class="my-cells" title="您目前的学历情况是">
+    <mp-cell value="高中毕业" link="true" hover="true" bindtap="toPassport"></mp-cell>
+    <mp-cell value="本科在读" link="true" hover="true" bindtap="toEnrollment"></mp-cell>
+    <mp-cell value="本科毕业" link="true" hover="true"></mp-cell>
+    <mp-cell value="研究生在读" link="true" hover="true"></mp-cell>
+    <mp-cell value="研究生毕业或以上" link="true" hover="true"></mp-cell>
+</mp-cells>

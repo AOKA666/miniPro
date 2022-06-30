@@ -1,4 +1,4 @@
-// pages/acca/index/index.js
+// pages/acca/status/status.js
 Page({
 
   /**
@@ -6,17 +6,22 @@ Page({
    */
   data: {
 
-  },
-  next: function(){
+},
+  toPassport:function(){
     wx.navigateTo({
-      url: '/pages/status/status',
+      url: '/pages/passport/passport',
+    })
+  },
+  toEnrollment:function(){
+    wx.navigateTo({
+      url: '/pages/enrollment/enrollment',
     })
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    
   },
 
   /**
@@ -44,6 +49,7 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload() {
+    
 
   },
 
@@ -66,5 +72,6 @@ Page({
    */
   onShareAppMessage() {
 
-  }
+  },
+
 })

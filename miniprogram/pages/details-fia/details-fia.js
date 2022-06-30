@@ -1,4 +1,4 @@
-// pages/acca/index/index.js
+// pages/details-fia/details-fia.js
 Page({
 
   /**
@@ -7,11 +7,7 @@ Page({
   data: {
 
   },
-  next: function(){
-    wx.navigateTo({
-      url: '/pages/status/status',
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */

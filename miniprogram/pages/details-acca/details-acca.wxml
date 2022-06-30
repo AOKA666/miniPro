@@ -1,0 +1,22 @@
+<!--pages/details-acca/details-acca.wxml-->
+<view class="weui-article__section">
+  <view class="weui-article__h5">ACCA与FIA有什么不同？</view>
+  <view class="weui-article__ol">
+    <view class="weui-article__li">与FIA相比，ACCA身份需准备的材料会比较繁杂，条件限制也比较多</view>
+    <view class="weui-article__li">
+      ACCA相比FIA有很多优势
+      <view class="weui-article__ul">
+        <view class="weui-article__li">FIA身份只能考前三门，但是ACCA前九门可以随意考</view>
+        <view class="weui-article__li">ACCA身份可以申请免试，FIA身份是不可以的</view>
+        <view class="weui-article__li"><text class="empha">学习ACCA的学生绝大部分都是为了获得ACCA的证书，很少有人会去考FIA证书，因此即使选择FIA身份最后也是要再转成ACCA的。</text></view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="weui-article__section">
+  <view class="weui-article__h5">什么样的情况下适合注册FIA身份</view>
+  <view class="weui-article__ol">
+    <view class="weui-article__li">感觉ACCA材料准备太麻烦，想要快一点考试</view>
+    <view class="weui-article__li">无法提供符合ACCA注册要求的材料</view>
+  </view>
+</view>

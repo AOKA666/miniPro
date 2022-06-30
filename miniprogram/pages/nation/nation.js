@@ -1,4 +1,4 @@
-// pages/acca/index/index.js
+// pages/nation/nation.js
 Page({
 
   /**
@@ -7,9 +7,10 @@ Page({
   data: {
 
   },
-  next: function(){
+  toDocument:function(e){
+    let abroad = e.currentTarget.dataset.abroad;
     wx.navigateTo({
-      url: '/pages/status/status',
+      url: '/pages/document/acca-1/acca-1?abroad='+abroad,
     })
   },
   /**

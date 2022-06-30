@@ -1,0 +1,5 @@
+<!--pages/nation/nation.wxml-->
+<mp-cells ext-class="my-cells" title="在国内还是国外上学">
+    <mp-cell value="我在国内上学" link="true" hover="true" bindtap="toDocument" data-abroad="no"></mp-cell>
+    <mp-cell value="我在国外上学" link="true" hover="true" bindtap="toDocument" data-abroad="yes"></mp-cell>
+</mp-cells>

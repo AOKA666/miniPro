@@ -1,0 +1,7 @@
+<!--pages/enrollment/enrollment.wxml-->
+<mp-cells ext-class="my-cells" title="具体在读情况是">
+    <mp-cell value="大一在读" link="true" hover="true" bindtap="toPassport"></mp-cell>
+    <mp-cell value="大一完成或大二在读" link="true" hover="true" bindtap="toNation"></mp-cell>
+    <mp-cell value="大二完成或大三在读" link="true" hover="true" bindtap="toNation"></mp-cell>
+    <mp-cell value="大三完成或大四在读" link="true" hover="true" bindtap="toNation"></mp-cell>
+</mp-cells>

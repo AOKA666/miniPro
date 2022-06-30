@@ -1,22 +1,33 @@
-// pages/acca/index/index.js
+// pages/acca/passport/passport.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    has_passport:{
+      yes: "我有护照",
+      no: "我没有护照"
+    }
   },
-  next: function(){
-    wx.navigateTo({
-      url: '/pages/status/status',
-    })
+  toResult:function(e){
+    let has = e.currentTarget.dataset.has;
+      wx.navigateTo({
+        url: '/pages/resultFIA1/resultFIA1?has='+has,
+      })
+  },
+  toResultAcca:function(e){
+    let has = e.currentTarget.dataset.has;
+    let abroad = e.currentTarget.dataset.abroad;
+      wx.navigateTo({
+        url: '/pages/resultACCA1/resultACCA1?has='+has+'&abroad='+abroad,
+      })
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    this.setData(options)
   },
 
   /**

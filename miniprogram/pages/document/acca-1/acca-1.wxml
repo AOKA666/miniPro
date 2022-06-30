@@ -1,0 +1,29 @@
+<!--pages/document/acca-1/acca-1.wxml-->
+
+<view class="weui-cells__title">需准备的材料</view>
+<view class="weui-cells weui-cells_after-title" wx:if="{{abroad=='yes'}}">
+  <view class="weui-cell" aria-role="option" wx:for="{{dataList2}}" wx:key="id">
+      <view class="weui-cell__bd">
+        {{item.document}}
+      </view>
+      <view class="weui-cell__ft">{{item.tips}}</view>
+  </view>
+  <navigator class="weui-cell weui-cell_active weui-cell_access weui-cell_link" url="/pages/tips/tips?abroad={{abroad}}">
+    <text class="weui-cell__bd">下一步</text>
+    <text class="weui-cell__ft"></text>
+  </navigator>
+</view>
+<view class="weui-cells weui-cells_after-title" wx:else>
+  <view class="weui-cell" aria-role="option" wx:for="{{dataList}}" wx:key="id">
+      <view class="weui-cell__bd">
+        {{item.document}}
+      </view>
+      <view class="weui-cell__ft">{{item.tips}}</view>
+  </view>
+  <navigator class="weui-cell weui-cell_active weui-cell_access weui-cell_link" url="/pages/tips/tips?abroad={{abroad}}">
+    <text class="weui-cell__bd">下一步</text>
+    <text class="weui-cell__ft"></text>
+  </navigator>
+</view>
+
+

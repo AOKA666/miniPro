@@ -1,0 +1,9 @@
+<!--pages/acca/passport/passport.wxml-->
+<mp-cells ext-class="my-cells" title="是否有护照" wx:if="{{fromacca=='yes'}}">
+    <mp-cell value="我有护照" link="true" hover="true" bindtap="toResultAcca" data-has="yes" data-abroad="{{abroad}}"></mp-cell>
+    <mp-cell value="我没有护照" link="true" hover="true" bindtap="toResultAcca" data-has="no" data-abroad="{{abroad}}"></mp-cell>
+</mp-cells>
+<mp-cells ext-class="my-cells" title="是否有护照" wx:else>
+    <mp-cell value="我有护照" link="true" hover="true" bindtap="toResult" data-has="yes"></mp-cell>
+    <mp-cell value="我没有护照" link="true" hover="true" bindtap="toResult" data-has="no"></mp-cell>
+</mp-cells>

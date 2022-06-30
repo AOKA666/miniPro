@@ -1,17 +1,12 @@
-// pages/acca/index/index.js
+// pages/exemption/exemption.js
 Page({
-
   /**
    * 页面的初始数据
    */
   data: {
 
   },
-  next: function(){
-    wx.navigateTo({
-      url: '/pages/status/status',
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */

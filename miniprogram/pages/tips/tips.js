@@ -1,4 +1,4 @@
-// pages/acca/index/index.js
+// pages/tips/tips.js
 Page({
 
   /**
@@ -7,16 +7,24 @@ Page({
   data: {
 
   },
-  next: function(){
+  toDetails:function(){
     wx.navigateTo({
-      url: '/pages/status/status',
+      url: '/pages/details-acca/details-acca',
+    })
+  },
+  toPassport:function(e){
+    let fromacca = e.currentTarget.dataset.fromacca;
+    let abroad = e.currentTarget.dataset.abroad;
+    console.log('data:',e);
+    wx.navigateTo({
+      url: '/pages/passport/passport?fromacca='+fromacca+'&abroad='+abroad,
     })
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    this.setData(options);
   },
 
   /**

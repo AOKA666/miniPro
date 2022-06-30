@@ -18,21 +18,21 @@
         },
         {
           "name": "",
-          "pathName": "pages/acca/index/index",
+          "pathName": "pages/index/index",
           "query": "",
           "launchMode": "default",
           "scene": null
         },
         {
           "name": "",
-          "pathName": "pages/acca/status/status",
+          "pathName": "pages/status/status",
           "query": "",
           "launchMode": "default",
           "scene": null
         },
         {
           "name": "",
-          "pathName": "pages/acca/passport/passport",
+          "pathName": "pages/passport/passport",
           "query": "",
           "launchMode": "default",
           "scene": null

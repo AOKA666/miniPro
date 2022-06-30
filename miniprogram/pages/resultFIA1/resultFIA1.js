@@ -1,22 +1,17 @@
-// pages/acca/index/index.js
+// pages/acca/resultFIA1/resultFIA1.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+  },
 
-  },
-  next: function(){
-    wx.navigateTo({
-      url: '/pages/status/status',
-    })
-  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    this.setData(options)
   },
 
   /**

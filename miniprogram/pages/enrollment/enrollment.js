@@ -1,4 +1,4 @@
-// pages/acca/index/index.js
+// pages/enrollment/enrollment.js
 Page({
 
   /**
@@ -7,9 +7,14 @@ Page({
   data: {
 
   },
-  next: function(){
+  toPassport:function(){
     wx.navigateTo({
-      url: '/pages/status/status',
+      url: '/pages/passport/passport',
+    })
+  },
+  toNation:function(){
+    wx.navigateTo({
+      url: '/pages/nation/nation',
     })
   },
   /**

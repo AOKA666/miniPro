@@ -1,6 +1,5 @@
 // pages/resultACCA2/resultACCA2.js
 Page({
-
   /**
    * 页面的初始数据
    */

@@ -17,6 +17,17 @@ Page({
       url: '/pages/enrollment/enrollment',
     })
   },
+  toNation:function(e){
+    let q = e.currentTarget.dataset.q;
+    wx.navigateTo({ 
+      url: '/pages/nation/nation?q='+q,
+    })
+  },
+  toDazhuan:function(){
+    wx.navigateTo({
+      url: '/pages/document/dazhuan/dazhuan',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

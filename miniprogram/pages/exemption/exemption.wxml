@@ -2,24 +2,53 @@
 <view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
   <view class="page__hd">
 		<view class="page__title">免试</view>
+    <view class="page__desc">可根据自己的情况补充材料</view>
 	</view>
   <view class="page__bd">
+    <view class="weui-panel weui-panel_access">
+      <view class="weui-panel__hd">申请资格（查看自己能否申请免试）</view>
+      <view class="weui-panel__bd">
+        <view class="weui-media-box weui-media-box_text" aria-role="option">
+          <view class="document-ctg">
+            <view class="weui-media-box__title">通过学历</view>
+            <navigator class="weui-btn weui-btn_mini weui-btn_primary detail-btn" aria-role="button" url="javascript:" bindtap="open5">详细</navigator>
+          </view>
+          <view class="weui-media-box__desc">国内大专毕业、或本科至少完成两年学业</view>
+        </view>
+        <view class="weui-media-box weui-media-box_text" aria-role="option">
+          <view class="weui-media-box__title">通过证书</view>
+          <view class="weui-media-box__desc">主要是CMA,CPA证书</view>
+        </view>
+        <view class="weui-media-box weui-media-box_text" aria-role="option">
+          <view class="document-ctg">
+            <view class="weui-media-box__title">方向班&加速计划</view>
+            <navigator class="weui-btn weui-btn_mini weui-btn_primary detail-btn" aria-role="button" url="javascript:" bindtap="open6">详细</navigator>
+          </view>
+        </view>
+      </view>
+    </view>
     <view class="weui-panel weui-panel_access">
       <view class="weui-panel__hd">所需材料</view>
       <view class="weui-panel__bd">
         <view class="weui-media-box weui-media-box_text" aria-role="option">
           <view class="document-ctg">
-            <view class="weui-media-box__title">基本学历材料</view>
-            <navigator class="weui-btn weui-btn_mini weui-btn_primary detail-btn" aria-role="button" url="javascript:" bindtap="open1">要点</navigator>
+            <view class="weui-media-box__title">学历相关材料</view>
+            <navigator class="weui-btn weui-btn_mini weui-btn_warn detail-btn" aria-role="button" url="javascript:" bindtap="open1">重要</navigator>
           </view>
-          <view class="weui-media-box__desc">即在读证明，成绩单，毕业证，学位证等材料。</view>
+          <view class="weui-media-box__desc">在读证明，成绩单，毕业证，学位证等</view>
         </view>
         <view class="weui-media-box weui-media-box_text" aria-role="option">
           <view class="document-ctg">
             <view class="weui-media-box__title">证书相关材料</view>
-            <navigator class="weui-btn weui-btn_mini weui-btn_primary detail-btn" aria-role="button" url="javascript:" bindtap="open2">要点</navigator>
+            <navigator class="weui-btn weui-btn_mini weui-btn_primary detail-btn" aria-role="button" url="javascript:" bindtap="open2">说明</navigator>
           </view>
           <view class="weui-media-box__desc">CMA,CPA等会计相关证书</view>
+        </view>
+        <view class="weui-media-box weui-media-box_text" aria-role="option">
+          <view class="document-ctg">
+            <view class="weui-media-box__title">方向班&加速计划相关材料</view>
+            <navigator class="weui-btn weui-btn_mini weui-btn_primary detail-btn" aria-role="button" url="javascript:" bindtap="open7">说明</navigator>
+          </view>
         </view>
       </view>
     </view>
@@ -29,16 +58,14 @@
         <view class="weui-media-box weui-media-box_text" aria-role="option">
           <view class="document-ctg">
             <view class="weui-media-box__title">我还没有注册账号</view>
-            <navigator class="weui-btn weui-btn_mini weui-btn_primary detail-btn" aria-role="button" url="javascript:" bindtap="open1">要点</navigator>
+            <navigator class="weui-btn weui-btn_mini weui-btn_primary detail-btn" aria-role="button" url="javascript:" bindtap="open3">查看</navigator>
           </view>
-          <view class="weui-media-box__desc">即在读证明，成绩单，毕业证，学位证等材料。</view>
         </view>
         <view class="weui-media-box weui-media-box_text" aria-role="option">
           <view class="document-ctg">
             <view class="weui-media-box__title">我已经有账号了</view>
-            <navigator class="weui-btn weui-btn_mini weui-btn_primary detail-btn" aria-role="button" url="javascript:" bindtap="open1">要点</navigator>
+            <navigator class="weui-btn weui-btn_mini weui-btn_primary detail-btn" aria-role="button" url="javascript:" bindtap="open4">查看</navigator>
           </view>
-          <view class="weui-media-box__desc">CMA,CPA</view>
         </view>
       </view>
     </view>
@@ -65,7 +92,7 @@
                 <view class="icon-box__desc">若使用在读证明申请免试，一定要明确说明【已完成几年学业，预计何时毕业，毕业将获得什么学位】，否则免试审核有不通过的风险</view>
               </view>
             </view>
-            <view><mp-icon icon="info" color="black" size="{{20}}"></mp-icon>【明确说明】的意思是不能通过计算得出年份，要直接体现</view>
+            <view><mp-icon icon="info" color="black" size="{{20}}"></mp-icon>【明确说明】不能通过计算得出年份，要直接体现</view>
             <view><mp-icon icon="info" color="black" size="{{20}}"></mp-icon>【国外学校】请尽量符合上述规范，实在无法更改只能先尝试提交</view>
             <view><mp-icon icon="info" color="black" size="{{20}}"></mp-icon>【国内学校】若中文件无法更改，可以联系翻译公司重新翻译英文件</view>
           </view>
@@ -88,13 +115,190 @@
               </view>
           </view>
           <view class="weui-half-screen-dialog__bd" style="padding-top: 32px; height: 50px;">
-            <view class="weui-panel weui-panel_access">
-              <view class="weui-panel__bd">
-                <view class="weui-media-box weui-media-box_text" aria-role="option">
-                  <text class="weui-media-box__title">全科合格证</text>
-                  <view class="weui-media-box__desc">即在读证明，成绩单，毕业证，学位证等材料。</view>
-                </view>               
+            <view class="weui-article__section">
+                  <view class="weui-article__h5">CPA</view>
+                  <view class="weui-article__ul">
+                    <view class="weui-article__li">只需提交CPA全科合格证即可</view>
+                  </view>
+                  <view class="weui-article__ul">
+                    <view class="weui-article__li">若使用CPA证书，还需要额外准备英文翻译件</view>
+                  </view>
+            </view>
+            <view class="weui-article__section">
+                  <view class="weui-article__h5">CMA</view>
+                  <view class="weui-article__ol">
+                    <view class="weui-article__li">毕业证学位证原件+英文翻译件</view>
+                    <view class="weui-article__li">成绩单原件+英文翻译件</view>
+                    <view class="weui-article__li">CMA证书</view>
+                    <view class="weui-article__li">
+                      CMA双科成绩单
+                      <view class="weui-article__ul">
+                        <view class="weui-article__li">需发邮件至IMA北京索要CMA双科通过成绩单</view>
+                      </view>
+                      <view class="weui-article__ul">
+                        <view class="weui-article__li">IMA北京邮箱：imachina@imanet.org</view>
+                      </view>
+                    </view>
+                    <view class="weui-article__li">两年工作经验（200字左右）</view>
+                      <view class="weui-article__ul">
+                        <view class="weui-article__li">打印在公司信纸上（有公司logo，公司名称和公司的联系方式）</view>
+                      </view>
+                      <view class="weui-article__ul">
+                        <view class="weui-article__li">证明需要中英文件，缺一不可</view>
+                      </view>
+                      <view class="weui-article__ul">
+                        <view class="weui-article__li">证明需要阐述您已经有至少2年的相关会计工作经验，并简述您的工作职能</view>
+                      </view>
+                      <view class="weui-article__ul">
+                        <view class="weui-article__li">在证明的最后，盖上公司的公章即可</view>
+                      </view>
+                      <view class="weui-article__ul">
+                        <view class="weui-article__li">此工作经验只要是在您申请免试之前获得的，都可以接受</view>
+                      </view>
+                  </view>
+            </view>
+            <view class="icon-box">
+              <text title="提示" aria-describedby="tip_2" class="weui-icon-info weui-icon_msg" aria-role="img"></text>
+              <view class="icon-box__ctn" aria-hidden="true">
+                <view class="icon-box__title">提示</view>
+                <view class="icon-box__desc" id="tip_2">使用证书申请免试，仍然需要提供学历材料！</view>
               </view>
+            </view>
+          </view>
+          <view class="weui-half-screen-dialog__ft">
+            <view class="weui-half-screen-dialog__btn-area">
+              <view aria-role="button" class="weui-btn weui-btn_primary" bindtap="close">我知道了</view>
+            </view>
+          </view>
+      </view>
+  </view>
+  <view aria-role="dialog" aria-modal="true">
+      <view class="weui-mask weui-transition {{dialog3 ? 'weui-transition_show' : ''}}" bindtap="close" aria-role="button" aria-label="关闭"></view>
+      <view class="weui-half-screen-dialog weui-transition {{dialog3 ? 'weui-transition_show' : ''}}">
+          <view class="weui-half-screen-dialog__hd">
+              <view class="weui-half-screen-dialog__hd__side" bindtap="close">
+                  <view aria-role="button" class="weui-icon-btn">关闭<i class="weui-icon-close-thin"></i></view>
+              </view>
+              <view class="weui-half-screen-dialog__hd__main">
+                  <strong class="weui-half-screen-dialog__title">申请说明</strong>
+              </view>
+          </view>
+          <view class="weui-half-screen-dialog__bd" style="padding-top: 32px; height: 50px;">
+            只需注册的时候，同时提交免试相关材料，这样官方在审核账号的同时就会同时审核免试的。账号注册成功之后，免试结果也就知道了。
+          </view>
+          <view class="weui-half-screen-dialog__ft">
+            <view class="weui-half-screen-dialog__btn-area">
+              <view aria-role="button" class="weui-btn weui-btn_primary" bindtap="close">我知道了</view>
+            </view>
+          </view>
+      </view>
+  </view>
+  <view aria-role="dialog" aria-modal="true">
+      <view class="weui-mask weui-transition {{dialog4 ? 'weui-transition_show' : ''}}" bindtap="close" aria-role="button" aria-label="关闭"></view>
+      <view class="weui-half-screen-dialog weui-transition {{dialog4 ? 'weui-transition_show' : ''}}">
+          <view class="weui-half-screen-dialog__hd">
+              <view class="weui-half-screen-dialog__hd__side" bindtap="close">
+                  <view aria-role="button" class="weui-icon-btn">关闭<i class="weui-icon-close-thin"></i></view>
+              </view>
+              <view class="weui-half-screen-dialog__hd__main">
+                  <strong class="weui-half-screen-dialog__title">申请说明</strong>
+              </view>
+          </view>
+          <view class="weui-half-screen-dialog__bd" style="padding-top: 32px; height: 50px;">
+            您可以准备好免试的材料，通过ACCA账号中绑定的邮箱直接发送给英国官方。
+            官方邮箱地址和邮件模板可以联系认证老师获取。
+          </view>
+          <view class="weui-half-screen-dialog__ft">
+            <view class="weui-half-screen-dialog__btn-area">
+              <view aria-role="button" class="weui-btn weui-btn_primary" bindtap="close">我知道了</view>
+            </view>
+          </view>
+      </view>
+  </view>
+  <view aria-role="dialog" aria-modal="true">
+      <view class="weui-mask weui-transition {{dialog5 ? 'weui-transition_show' : ''}}" bindtap="close" aria-role="button" aria-label="关闭"></view>
+      <view class="weui-half-screen-dialog weui-transition {{dialog5 ? 'weui-transition_show' : ''}}">
+          <view class="weui-half-screen-dialog__hd">
+              <view class="weui-half-screen-dialog__hd__side" bindtap="close">
+                  <view aria-role="button" class="weui-icon-btn">关闭<i class="weui-icon-close-thin"></i></view>
+              </view>
+              <view class="weui-half-screen-dialog__hd__main">
+                  <strong class="weui-half-screen-dialog__title">资格说明</strong>
+              </view>
+          </view>
+          <view class="weui-half-screen-dialog__bd" style="padding-top: 32px; height: 50px;">
+            <view class="weui-article__h5">有资格申请免试的学员（需会计相关专业）</view>
+            <view class="weui-article__ul">
+              <view class="weui-article__li">国内本科至少完成两年（方向班的学员或有加速信的学员完成一年即可）</view>
+              <view class="weui-article__li">国外本科至少完成一年</view>
+              <view class="weui-article__li">国内大专毕业</view>
+              <view class="weui-article__li">本科或研究生以上毕业</view>
+              <view class="icon-box">
+              <text title="普通警告" class="weui-icon-warn weui-icon_msg-primary" aria-role="img"></text>
+              <view class="icon-box__ctn" aria-hidden="true">
+                <view class="icon-box__title">注意</view>
+                <view class="icon-box__desc">研究生在读无法申请免试（必须毕业）</view>
+              </view>
+            </view>
+            </view>
+          </view>
+          <view class="weui-half-screen-dialog__ft">
+            <view class="weui-half-screen-dialog__btn-area">
+              <view aria-role="button" class="weui-btn weui-btn_primary" bindtap="close">我知道了</view>
+            </view>
+          </view>
+      </view>
+  </view>
+  <view aria-role="dialog" aria-modal="true">
+      <view class="weui-mask weui-transition {{dialog6 ? 'weui-transition_show' : ''}}" bindtap="close" aria-role="button" aria-label="关闭"></view>
+      <view class="weui-half-screen-dialog weui-transition {{dialog6 ? 'weui-transition_show' : ''}}">
+          <view class="weui-half-screen-dialog__hd">
+              <view class="weui-half-screen-dialog__hd__side" bindtap="close">
+                  <view aria-role="button" class="weui-icon-btn">关闭<i class="weui-icon-close-thin"></i></view>
+              </view>
+              <view class="weui-half-screen-dialog__hd__main">
+                  <strong class="weui-half-screen-dialog__title">资格说明</strong>
+              </view>
+          </view>
+          <view class="weui-half-screen-dialog__bd" style="padding-top: 32px; height: 50px;">
+            <view class="weui-article__h5">方向班</view>
+            <view class="weui-article__ul">
+              <view class="weui-article__li">即专业是【ACCA方向班】</view>
+            </view>
+            <view class="weui-article__h5">加速计划</view>
+            <view class="weui-article__ul">
+              <view class="weui-article__li">加速计划是高校与英国ACCA官方的一种合作，允许学员提前以毕业生的身份注册ACCA并申请【有条件免试】</view>
+              <view class="weui-article__li">学校是否与官方有合作，需要学员自行联系教务处或学校相关老师得知</view>
+              <view class="weui-article__li">国内学校一般是没有此项合作的，但港澳台的学校情况可能有所不同，需要学员进一步确认</view>
+            </view>
+          </view>
+          <view class="weui-half-screen-dialog__ft">
+            <view class="weui-half-screen-dialog__btn-area">
+              <view aria-role="button" class="weui-btn weui-btn_primary" bindtap="close">我知道了</view>
+            </view>
+          </view>
+      </view>
+  </view>
+  <view aria-role="dialog" aria-modal="true">
+      <view class="weui-mask weui-transition {{dialog7 ? 'weui-transition_show' : ''}}" bindtap="close" aria-role="button" aria-label="关闭"></view>
+      <view class="weui-half-screen-dialog weui-transition {{dialog7 ? 'weui-transition_show' : ''}}">
+          <view class="weui-half-screen-dialog__hd">
+              <view class="weui-half-screen-dialog__hd__side" bindtap="close">
+                  <view aria-role="button" class="weui-icon-btn">关闭<i class="weui-icon-close-thin"></i></view>
+              </view>
+              <view class="weui-half-screen-dialog__hd__main">
+                  <strong class="weui-half-screen-dialog__title">资格说明</strong>
+              </view>
+          </view>
+          <view class="weui-half-screen-dialog__bd" style="padding-top: 32px; height: 50px;">
+            <view class="weui-article__h5">方向班</view>
+            <view class="weui-article__ul">
+              <view class="weui-article__li">在读证明+成绩单+对应的翻译件</view>
+              <view class="weui-article__li">在读证明中要体现【就读于方向班，申请有条件免试】</view>
+            </view>
+            <view class="weui-article__h5">加速计划</view>
+            <view class="weui-article__ul">
+              <view class="weui-article__li">除了学历材料，需要额外提供【加速信】</view>
             </view>
           </view>
           <view class="weui-half-screen-dialog__ft">

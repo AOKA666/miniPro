@@ -6,7 +6,11 @@
     <view class="weui-media-box__desc">您的注册身份为ACCA</view>
   </view>
 </view>
-<navigator class="weui-cell weui-cell_active weui-cell_access weui-cell_link" url="/pages/resultACCA2/resultACCA2?has={{has}}&abroad={{abroad}}">
+<navigator class="weui-cell weui-cell_active weui-cell_access weui-cell_link" wx:if="{{q=='bachelor'}}" url="/pages/resultBachelor/resultBachelor?has={{has}}&abroad={{abroad}}">
+  <text class="weui-cell__bd">查看需准备的材料</text>
+  <text class="weui-cell__ft"></text>
+</navigator>
+<navigator class="weui-cell weui-cell_active weui-cell_access weui-cell_link" wx:if="{{q!='bachelor'}}" url="/pages/resultACCA2/resultACCA2?has={{has}}&abroad={{abroad}}">
   <text class="weui-cell__bd">查看需准备的材料</text>
   <text class="weui-cell__ft"></text>
 </navigator>

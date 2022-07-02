@@ -1,32 +1,18 @@
-// pages/tips/tips.js
+// pages/document/dazhuan/dazhuan.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    q: ""
+
   },
-  toDetails:function(){
-    wx.navigateTo({
-      url: '/pages/details-acca/details-acca',
-    })
-  },
-  toPassport:function(e){
-    console.log(e);
-    let fromacca = e.currentTarget.dataset.fromacca;
-    let abroad = e.currentTarget.dataset.abroad;
-    let q = e.currentTarget.dataset.q;
-    wx.navigateTo({
-      url: '/pages/passport/passport?fromacca='+fromacca+'&abroad='+abroad+'&q='+q,
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    console.log('tips', options)
-    this.setData(options);
+
   },
 
   /**

@@ -1,0 +1,94 @@
+<!--pages/resultBachelor/resultBachelor.wxml-->
+<view class="page__bd">
+<view class="weui-cells__title">请准备以下材料，通过邮件发给认证老师</view>
+<view class="weui-cells weui-cells_after-title" wx:if="{{has=='yes' && abroad=='no'}}">
+  <view class="weui-cell" aria-role="option" wx:for="{{extra1}}" wx:key="id">
+      <view class="weui-cell__bd">
+        {{item.document}}
+      </view>
+      <view class="weui-cell__ft">{{item.tips}}</view>
+  </view>
+  <view class="weui-cell" aria-role="option" wx:for="{{dataList}}" wx:key="id">
+      <view class="weui-cell__bd">
+        {{item.document}}
+      </view>
+      <view class="weui-cell__ft">{{item.tips}}</view>
+  </view>
+  <view class="weui-cell" aria-role="option">
+      <view class="weui-cell__bd">
+        注册信息确认表
+      </view>
+      <view class="weui-cell__ft">在邮件附件中</view>
+  </view>
+</view>
+<view class="weui-cells weui-cells_after-title" wx:elif="{{has=='yes' && abroad=='yes'}}">
+  <view class="weui-cell" aria-role="option" wx:for="{{extra1}}" wx:key="id">
+      <view class="weui-cell__bd">
+        {{item.document}}
+      </view>
+      <view class="weui-cell__ft">{{item.tips}}</view>
+  </view>
+  <view class="weui-cell" aria-role="option" wx:for="{{abroadData}}" wx:key="id">
+      <view class="weui-cell__bd">
+        {{item.document}}
+      </view>
+      <view class="weui-cell__ft">{{item.tips}}</view>
+  </view>
+  <view class="weui-cell" aria-role="option">
+      <view class="weui-cell__bd">
+        注册信息确认表
+      </view>
+      <view class="weui-cell__ft">在邮件附件中</view>
+  </view>
+</view>
+<view class="weui-cells weui-cells_after-title" wx:elif="{{has=='no' && abroad=='no'}}">
+  <view class="weui-cell" aria-role="option" wx:for="{{extra2}}" wx:key="id">
+      <view class="weui-cell__bd">
+        {{item.document}}
+      </view>
+      <view class="weui-cell__ft">{{item.tips}}</view>
+  </view>
+  <view class="weui-cell" aria-role="option" wx:for="{{dataList}}" wx:key="id">
+      <view class="weui-cell__bd">
+        {{item.document}}
+      </view>
+      <view class="weui-cell__ft">{{item.tips}}</view>
+  </view>
+  <view class="weui-cell" aria-role="option">
+      <view class="weui-cell__bd">
+        注册信息确认表
+      </view>
+      <view class="weui-cell__ft">在邮件附件中</view>
+  </view>
+</view>
+<view class="weui-cells weui-cells_after-title" wx:else="{{has=='no' && abroad=='yes'}}">
+  <view class="weui-cell" aria-role="option" wx:for="{{extra2}}" wx:key="id">
+      <view class="weui-cell__bd">
+        {{item.document}}
+      </view>
+      <view class="weui-cell__ft">{{item.tips}}</view>
+  </view>
+  <view class="weui-cell" aria-role="option" wx:for="{{abroadData}}" wx:key="id">
+      <view class="weui-cell__bd">
+        {{item.document}}
+      </view>
+      <view class="weui-cell__ft">{{item.tips}}</view>
+  </view>
+  <view class="weui-cell" aria-role="option">
+      <view class="weui-cell__bd">
+        注册信息确认表
+      </view>
+      <view class="weui-cell__ft">在邮件附件中</view>
+  </view>
+</view>
+</view>
+<view class="icon-box">
+  <text title="提示" aria-describedby="tip_2" class="weui-icon-info weui-icon_msg" aria-role="img"></text>
+  <view class="icon-box__ctn" aria-hidden="true">
+    <view class="icon-box__title">提示</view>
+    <view class="icon-box__desc" id="tip_2">照片、扫描件、pdf均可，需保证清晰无反光。学校若无法直接提供英文材料，需要联系翻译公司进行翻译</view>
+  </view>
+</view>
+<view class="button-sp-area">
+	<navigator class="weui-btn weui-btn_primary check-btn" aria-role="button" url="/pages/exemption/exemption">关于免试</navigator>
+</view>

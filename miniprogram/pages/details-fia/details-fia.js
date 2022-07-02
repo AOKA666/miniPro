@@ -1,6 +1,6 @@
 // pages/details-fia/details-fia.js
 Page({
-
+  mixins: [require('../../mixin/common')],
   /**
    * 页面的初始数据
    */

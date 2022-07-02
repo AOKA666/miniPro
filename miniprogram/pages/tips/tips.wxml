@@ -1,12 +1,22 @@
 <!--pages/tips/tips.wxml-->
-<view class="icon-box">
-  <text title="提示" aria-describedby="tip_2" class="weui-icon-info weui-icon_msg" aria-role="img"></text>
-  <view class="icon-box__ctn" aria-hidden="true">
-    <view class="icon-box__title">提示</view>
-    <view class="icon-box__desc" id="tip_2">您现在的情况已经符合注册ACCA的条件，但是您仍然可以选择注册FIA。请根据个人情况选择下一步操作。</view>
+  <view class="icon-box">
+    <text title="提示" aria-describedby="tip_2" class="weui-icon-info weui-icon_msg" aria-role="img"></text>
+    <view class="icon-box__ctn" aria-hidden="true">
+      <view class="icon-box__title">提示</view>
+      <view class="icon-box__desc" id="tip_2">您现在的情况已经符合注册ACCA的条件，但是您仍然可以选择注册FIA。请根据个人情况选择下一步操作。</view>
+    </view>
   </view>
-</view>
-<mp-cells ext-class="my-cells" title="请选择下一步操作">
+<mp-cells ext-class="my-cells" title="请选择下一步操作" wx:if="{{q=='bachelor'}}">
+    <mp-cell value="我决定注册FIA" link="true" hover="true" bindtap="toPassport"></mp-cell>
+    <mp-cell value="我决定注册ACCA" link="true" hover="true" bindtap="toPassport" data-fromacca="yes" data-abroad="{{abroad}}" data-q="bachelor"></mp-cell>
+    <mp-cell value="告诉我FIA和ACCA的区别" link="true" hover="true" bindtap="toDetails"></mp-cell>
+</mp-cells>
+<mp-cells ext-class="my-cells" title="请选择下一步操作" wx:elif="{{q=='diploma'}}">
+    <mp-cell value="我决定注册FIA" link="true" hover="true" bindtap="toPassport"></mp-cell>
+    <mp-cell value="我决定注册ACCA" link="true" hover="true" bindtap="toPassport" data-fromacca="yes" data-abroad="no" data-q="diploma"></mp-cell>
+    <mp-cell value="告诉我FIA和ACCA的区别" link="true" hover="true" bindtap="toDetails"></mp-cell>
+</mp-cells>
+<mp-cells ext-class="my-cells" title="请选择下一步操作" wx:else>
     <mp-cell value="我决定注册FIA" link="true" hover="true" bindtap="toPassport"></mp-cell>
     <mp-cell value="我决定注册ACCA" link="true" hover="true" bindtap="toPassport" data-fromacca="yes" data-abroad="{{abroad}}"></mp-cell>
     <mp-cell value="告诉我FIA和ACCA的区别" link="true" hover="true" bindtap="toDetails"></mp-cell>

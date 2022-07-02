@@ -13,11 +13,17 @@ Page({
       url: '/pages/document/acca-1/acca-1?abroad='+abroad,
     })
   },
+  toBachelor:function(e){
+    let abroad = e.currentTarget.dataset.abroad;
+    wx.navigateTo({
+      url: '/pages/document/acca-bachelor/acca-bachelor?abroad='+abroad,
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    this.setData(options);
   },
 
   /**

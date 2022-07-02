@@ -13,7 +13,10 @@
     "pages/resultACCA1/resultACCA1",
     "pages/document/acca-1/acca-1",
     "pages/resultACCA2/resultACCA2",
-    "pages/exemption/exemption"
+    "pages/exemption/exemption",
+    "pages/document/acca-bachelor/acca-bachelor",
+    "pages/resultBachelor/resultBachelor",
+    "pages/document/dazhuan/dazhuan"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

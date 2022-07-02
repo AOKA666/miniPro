@@ -1,42 +1,107 @@
 <page-meta root-font-size="system"/>
 <view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
-	<view aria-hidden="{{dialog2 ? true : false}}" class="page__hd">
-		<view class="page__title pagetitle">免试说明</view>
+  <view class="page__hd">
+		<view class="page__title">免试</view>
 	</view>
-	<view aria-hidden="{{dialog2 ? true : false}}" class="page__bd page__bd_spacing">
-		<view aria-role="button" class="weui-btn weui-btn_default" bindtap="open2">材料说明</view>
-	</view>
-    <view aria-role="dialog" aria-modal="true" aria-labelledby="js_dialog2_title">
-        <view class="weui-mask weui-transition {{dialog2 ? 'weui-transition_show' : ''}}" bindtap="close" aria-role="button" aria-label="关闭"></view>
-        <view class="weui-half-screen-dialog weui-half-screen-dialog_bottom-fixed weui-transition {{dialog2 ? 'weui-transition_show' : ''}}">
-            <view class="weui-half-screen-dialog__hd">
-                <view class="weui-half-screen-dialog__hd__side" bindtap="close">
-                    <view aria-role="button" style="display:none;" class="weui-btn_icon weui-wa-hotarea">返回<i class="weui-icon-back-arrow-thin"></i></view>
-                    <view aria-role="button" style="display:none;" class="weui-btn_icon weui-wa-hotarea">关闭<i class="weui-icon-close-thin"></i></view>
-                    <view aria-role="button" class="weui-btn_icon weui-wa-hotarea">关闭<i class="weui-icon-slide-down"></i></view>
-                </view>
-                <view class="weui-half-screen-dialog__hd__main">
-                    <strong class="weui-half-screen-dialog__title" id="js_dialog2_title">标题</strong>
-                </view>
-                <view class="weui-half-screen-dialog__hd__side">
-                    <view aria-role="button" class="weui-icon-btn">更多<i class="weui-icon-more"></i></view>
-                </view>
-            </view>
-            <view class="weui-half-screen-dialog__bd">
-                <view class="weui-bottom-fixed-opr-page  {{wrap ? 'weui-bottom-fixed-opr-page_btn-wrap' : ''}}">
-                  <view class="weui-bottom-fixed-opr-page__content">
-                    <view class="weui-half-screen-dialog__desc">
-                      辅助描述内容，可根据实际需要安排
-                    </view>
-                    <view class="weui-half-screen-dialog__tips" role="option">
-                    </view>
-                  </view>
-                  <view class="weui-bottom-fixed-opr">
-                    <view id="js_btn1_1" aria-role="button" class="weui-btn weui-btn_default" bindtap="close">取消</view>
-                    <view id="js_btn1_2" aria-role="button" class="weui-btn weui-btn_primary" bindtap="close">阅读并同意</view>
-                  </view>
-                </view>
-            </view>
+  <view class="page__bd">
+    <view class="weui-panel weui-panel_access">
+      <view class="weui-panel__hd">所需材料</view>
+      <view class="weui-panel__bd">
+        <view class="weui-media-box weui-media-box_text" aria-role="option">
+          <view class="document-ctg">
+            <view class="weui-media-box__title">基本学历材料</view>
+            <navigator class="weui-btn weui-btn_mini weui-btn_primary detail-btn" aria-role="button" url="javascript:" bindtap="open1">要点</navigator>
+          </view>
+          <view class="weui-media-box__desc">即在读证明，成绩单，毕业证，学位证等材料。</view>
         </view>
+        <view class="weui-media-box weui-media-box_text" aria-role="option">
+          <view class="document-ctg">
+            <view class="weui-media-box__title">证书相关材料</view>
+            <navigator class="weui-btn weui-btn_mini weui-btn_primary detail-btn" aria-role="button" url="javascript:" bindtap="open2">要点</navigator>
+          </view>
+          <view class="weui-media-box__desc">CMA,CPA等会计相关证书</view>
+        </view>
+      </view>
     </view>
+    <view class="weui-panel weui-panel_access">
+      <view class="weui-panel__hd">如何申请</view>
+      <view class="weui-panel__bd">
+        <view class="weui-media-box weui-media-box_text" aria-role="option">
+          <view class="document-ctg">
+            <view class="weui-media-box__title">我还没有注册账号</view>
+            <navigator class="weui-btn weui-btn_mini weui-btn_primary detail-btn" aria-role="button" url="javascript:" bindtap="open1">要点</navigator>
+          </view>
+          <view class="weui-media-box__desc">即在读证明，成绩单，毕业证，学位证等材料。</view>
+        </view>
+        <view class="weui-media-box weui-media-box_text" aria-role="option">
+          <view class="document-ctg">
+            <view class="weui-media-box__title">我已经有账号了</view>
+            <navigator class="weui-btn weui-btn_mini weui-btn_primary detail-btn" aria-role="button" url="javascript:" bindtap="open1">要点</navigator>
+          </view>
+          <view class="weui-media-box__desc">CMA,CPA</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="modal-page">
+  <view aria-role="dialog" aria-modal="true">
+      <view class="weui-mask weui-transition {{dialog1 ? 'weui-transition_show' : ''}}" bindtap="close" aria-role="button" aria-label="关闭"></view>
+      <view class="weui-half-screen-dialog weui-half-screen-dialog_large weui-transition {{dialog1 ? 'weui-transition_show' : ''}}">
+          <view class="weui-half-screen-dialog__hd">
+              <view class="weui-half-screen-dialog__hd__side" bindtap="close">
+                  <view aria-role="button" class="weui-icon-btn">关闭<i class="weui-icon-close-thin"></i></view>
+              </view>
+              <view class="weui-half-screen-dialog__hd__main">
+                  <strong class="weui-half-screen-dialog__title">材料说明</strong>
+              </view>
+          </view>
+          <view class="weui-half-screen-dialog__bd" style="padding-top: 32px; height: 50px;">
+            <view class="icon-box">
+              <text title="普通警告" class="weui-icon-warn weui-icon_msg-primary" aria-role="img"></text>
+              <view class="icon-box__ctn" aria-hidden="true">
+                <view class="icon-box__title">注意</view>
+                <view class="icon-box__desc">若使用在读证明申请免试，一定要明确说明【已完成几年学业，预计何时毕业，毕业将获得什么学位】，否则免试审核有不通过的风险</view>
+              </view>
+            </view>
+            <view><mp-icon icon="info" color="black" size="{{20}}"></mp-icon>【明确说明】的意思是不能通过计算得出年份，要直接体现</view>
+            <view><mp-icon icon="info" color="black" size="{{20}}"></mp-icon>【国外学校】请尽量符合上述规范，实在无法更改只能先尝试提交</view>
+            <view><mp-icon icon="info" color="black" size="{{20}}"></mp-icon>【国内学校】若中文件无法更改，可以联系翻译公司重新翻译英文件</view>
+          </view>
+          <view class="weui-half-screen-dialog__ft">
+            <view class="weui-half-screen-dialog__btn-area">
+              <view aria-role="button" class="weui-btn weui-btn_primary" bindtap="close">我知道了</view>
+            </view>
+          </view>
+      </view>
+  </view>
+  <view aria-role="dialog" aria-modal="true">
+      <view class="weui-mask weui-transition {{dialog2 ? 'weui-transition_show' : ''}}" bindtap="close" aria-role="button" aria-label="关闭"></view>
+      <view class="weui-half-screen-dialog weui-half-screen-dialog_large weui-transition {{dialog2 ? 'weui-transition_show' : ''}}">
+          <view class="weui-half-screen-dialog__hd">
+              <view class="weui-half-screen-dialog__hd__side" bindtap="close">
+                  <view aria-role="button" class="weui-icon-btn">关闭<i class="weui-icon-close-thin"></i></view>
+              </view>
+              <view class="weui-half-screen-dialog__hd__main">
+                  <strong class="weui-half-screen-dialog__title">材料说明</strong>
+              </view>
+          </view>
+          <view class="weui-half-screen-dialog__bd" style="padding-top: 32px; height: 50px;">
+            <view class="weui-panel weui-panel_access">
+              <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_text" aria-role="option">
+                  <text class="weui-media-box__title">全科合格证</text>
+                  <view class="weui-media-box__desc">即在读证明，成绩单，毕业证，学位证等材料。</view>
+                </view>               
+              </view>
+            </view>
+          </view>
+          <view class="weui-half-screen-dialog__ft">
+            <view class="weui-half-screen-dialog__btn-area">
+              <view aria-role="button" class="weui-btn weui-btn_primary" bindtap="close">我知道了</view>
+            </view>
+          </view>
+      </view>
+  </view>
 </view>

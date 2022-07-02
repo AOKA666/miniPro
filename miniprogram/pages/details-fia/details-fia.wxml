@@ -1,4 +1,7 @@
 <!--pages/details-fia/details-fia.wxml-->
+<view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
+  <view class="weui-article">
+    <view aria-role="heading" aria-level="4" class="weui-article__h1">简单了解FIA和ACCA</view>
 <view class="weui-article__section">
   <view class="weui-article__h5">FIA是什么？</view>
   <view class="weui-article__ul">
@@ -24,4 +27,6 @@
     <view class="weui-article__li">FIA与ACCA的注册费是一样的，之后转身份也不需要额外支付费用</view>
     <view class="weui-article__li">FIA转为的ACCA与直接注册的ACCA是完全相同的</view>
   </view>
+</view>
+</view>
 </view>

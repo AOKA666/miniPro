@@ -1,38 +1,40 @@
 <!--pages/document/fia-1/fia-1.wxml-->
-<view class="weui-cells__title">请准备以下材料，通过邮件发给认证老师</view>
-<view class="weui-cells weui-cells_after-title" wx:if="{{ has== 'yes'}}">
-    <view class="weui-cell" aria-role="option">
-        <view class="weui-cell__bd">
-          护照原件
-        </view>
-        <view class="weui-cell__ft">需在有效期内</view>
-    </view>
-    <view class="weui-cell" aria-role="option">
-        <view class="weui-cell__bd">
-          注册信息确认表
-        </view>
-        <view class="weui-cell__ft">在邮件附件中</view>
-    </view>
-</view>
-<view class="weui-cells weui-cells_after-title" wx:else>
-    <view class="weui-cell" aria-role="option">
-        <view class="weui-cell__bd">
-          身份证原件
-        </view>
-        <view class="weui-cell__ft">需在有效期内</view>
-    </view>
-    <view class="weui-cell" aria-role="option">
-        <view class="weui-cell__bd">
-          身份证翻译件
-        </view>
-        <view class="weui-cell__ft">需在有效期内</view>
-    </view>
-    <view class="weui-cell" aria-role="option">
-        <view class="weui-cell__bd">
-          注册信息确认表
-        </view>
-        <view class="weui-cell__ft">在邮件附件中</view>
-    </view>
+<view class="page__bd">
+  <view class="weui-cells__title">请准备以下材料，通过邮件发给认证老师</view>
+  <view class="weui-cells weui-cells_after-title" wx:if="{{ has== 'yes'}}">
+      <view class="weui-cell" aria-role="option">
+          <view class="weui-cell__bd">
+            护照原件
+          </view>
+          <view class="weui-cell__ft">需在有效期内</view>
+      </view>
+      <view class="weui-cell" aria-role="option">
+          <view class="weui-cell__bd">
+            注册信息确认表
+          </view>
+          <view class="weui-cell__ft">在邮件附件中</view>
+      </view>
+  </view>
+  <view class="weui-cells weui-cells_after-title" wx:else>
+      <view class="weui-cell" aria-role="option">
+          <view class="weui-cell__bd">
+            身份证原件
+          </view>
+          <view class="weui-cell__ft">需在有效期内</view>
+      </view>
+      <view class="weui-cell" aria-role="option">
+          <view class="weui-cell__bd">
+            身份证翻译件
+          </view>
+          <view class="weui-cell__ft">需在有效期内</view>
+      </view>
+      <view class="weui-cell" aria-role="option">
+          <view class="weui-cell__bd">
+            注册信息确认表
+          </view>
+          <view class="weui-cell__ft">在邮件附件中</view>
+      </view>
+  </view>
 </view>
 <view class="icon-box">
   <text title="提示" aria-describedby="tip_2" class="weui-icon-info weui-icon_msg" aria-role="img"></text>

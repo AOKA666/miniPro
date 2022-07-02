@@ -1,4 +1,5 @@
 <!--pages/resultACCA2/resultACCA2.wxml-->
+<view class="page__bd">
 <view class="weui-cells__title">请准备以下材料，通过邮件发给认证老师</view>
 <view class="weui-cells weui-cells_after-title" wx:if="{{has=='yes' && abroad=='no'}}">
   <view class="weui-cell" aria-role="option" wx:for="{{extra1}}" wx:key="id">
@@ -80,6 +81,7 @@
       <view class="weui-cell__ft">在邮件附件中</view>
   </view>
 </view>
+</view>
 <view class="icon-box">
   <text title="提示" aria-describedby="tip_2" class="weui-icon-info weui-icon_msg" aria-role="img"></text>
   <view class="icon-box__ctn" aria-hidden="true">
@@ -88,5 +90,5 @@
   </view>
 </view>
 <view class="button-sp-area">
-	<navigator class="weui-btn weui-btn_primary" aria-role="button" url="/pages/exemption/exemption">关于免试</navigator>
+	<navigator class="weui-btn weui-btn_primary check-btn" aria-role="button" url="/pages/exemption/exemption">关于免试</navigator>
 </view>

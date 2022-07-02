@@ -49,7 +49,7 @@ Page({
       sixth: {
         id: 8,
         document: "在读证明原件",
-        tips: "需在有效期内"
+        tips: "带有盖章或签名"
       },
       seventh: {
         id: 9,

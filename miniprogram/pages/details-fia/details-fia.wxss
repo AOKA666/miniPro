@@ -1,2 +1,3 @@
 /* pages/details-fia/details-fia.wxss */
 .weui-article__h4,.weui-article__h5,.weui-article__h6{font-size:1rem;font-weight:600}.weui-article__p{margin:0 0 24px;line-height:1.6}.weui-article__ol,.weui-article__ul{margin-left:1.2em;margin-bottom:24px}.weui-article__ol .weui-article__ol,.weui-article__ol .weui-article__ul,.weui-article__ul .weui-article__ol,.weui-article__ul .weui-article__ul{margin:.5em 0 .5em 1.2em}.weui-article__ol{list-style:decimal}.weui-article__ul{list-style:disc}.weui-article__li{display:list-item;margin:.5em 0}.weui-article__list_inside .weui-article__li{list-style-position:inside}.weui-article__list_none .weui-article__li{list-style:none}
+.page{background-color:var(--weui-BG-2)}image{margin:4px 0}

@@ -3,9 +3,18 @@
     <mp-cell value="我有护照" link="true" hover="true" bindtap="toResultAcca" data-has="yes" data-abroad="{{abroad}}" data-q="bachelor"></mp-cell>
     <mp-cell value="我没有护照" link="true" hover="true" bindtap="toResultAcca" data-has="no" data-abroad="{{abroad}}" data-q="bachelor"></mp-cell>
 </mp-cells>
-<mp-cells ext-class="my-cells" title="是否有护照" wx:elif="{{fromacca=='yes'&&q!='bachelor'}}">
-    <mp-cell value="我有护照" link="true" hover="true" bindtap="toResultAcca" data-has="yes" data-abroad="{{abroad}}"></mp-cell>
+<mp-cells ext-class="my-cells" title="是否有护照" wx:elif="{{fromacca=='yes'&&q=='diploma'}}">
+    <mp-cell value="我有护照" link="true" hover="true" bindtap="toResultAcca" data-has="yes" data-abroad="{{abroad}}" data-q="diploma"></mp-cell>
+    <mp-cell value="我没有护照" link="true" hover="true" bindtap="toResultAcca" data-has="no" data-abroad="{{abroad}}"
+    data-q="diploma"></mp-cell>
+</mp-cells>
+<mp-cells ext-class="my-cells" title="是否有护照" wx:elif="{{fromacca=='yes'&&q=='ongoing'}}">
+    <mp-cell value="我有护照" link="true" hover="true" bindtap="toResultAcca" data-has="yes" data-abroad="{{abroad}}" data-q="ongoing"></mp-cell>
     <mp-cell value="我没有护照" link="true" hover="true" bindtap="toResultAcca" data-has="no" data-abroad="{{abroad}}"></mp-cell>
+</mp-cells>
+<mp-cells ext-class="my-cells" title="是否有护照" wx:elif="{{fromacca=='yes'&&q=='master'}}">
+    <mp-cell value="我有护照" link="true" hover="true" bindtap="toResultMaster" data-has="yes" data-babroad="{{babroad}}" data-pabroad="{{pabroad}}" data-q="master"></mp-cell>
+    <mp-cell value="我没有护照" link="true" hover="true" bindtap="toResultMaster" data-has="no" data-babroad="{{babroad}}" data-pabroad="{{pabroad}}" data-q="master"></mp-cell>
 </mp-cells>
 <mp-cells ext-class="my-cells" title="是否有护照" wx:else>
     <mp-cell value="我有护照" link="true" hover="true" bindtap="toResult" data-has="yes"></mp-cell>

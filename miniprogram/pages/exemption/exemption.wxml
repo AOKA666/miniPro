@@ -69,6 +69,13 @@
         </view>
       </view>
     </view>
+    <view class="weui-panel weui-panel_access">
+      <view class="button-sp-area cell">
+        <navigator class="weui-btn_cell weui-btn_cell-primary" aria-role="button" url="/pages/index/index">
+          <mp-icon type="field" icon="home" color="#07c160" size="{{25}}"></mp-icon>返回首页
+        </navigator>
+      </view>
+    </view>
   </view>
 </view>
 

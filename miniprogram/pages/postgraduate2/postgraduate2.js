@@ -1,17 +1,25 @@
-// pages/acca/index/index.js
+// pages/postgraduate2/postgraduate2.js
 Page({
-  mixins: [require('../../mixin/common')],
+
   /**
    * 页面的初始数据
    */
   data: {
-    wrap: false,
+
+  },
+  toNext:function(e){
+    let babroad = e.currentTarget.dataset.babroad;
+    let pabroad = e.currentTarget.dataset.pabroad;
+    console.log(babroad,pabroad)
+    wx.navigateTo({
+      url: '/pages/document/acca-master/acca-master?babroad='+babroad+'&pabroad='+pabroad,
+    })
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    this.setData(options);
   },
 
   /**
@@ -25,13 +33,6 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow() {
-    wx.createSelectorQuery().select('#js_btn')
-      .boundingClientRect((rect) => {
-        if (rect.height > 48) {
-          this.setData({ wrap: true });
-        }
-      })
-      .exec();      
 
   },
 
@@ -46,7 +47,7 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload() {
-    
+
   },
 
   /**

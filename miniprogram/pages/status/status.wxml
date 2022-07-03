@@ -4,6 +4,6 @@
     <mp-cell value="本科在读" link="true" hover="true" bindtap="toEnrollment"></mp-cell>
     <mp-cell value="本科毕业" link="true" hover="true" bindtap="toNation" data-q="bachelor"></mp-cell>
     <mp-cell value="大专毕业" link="true" hover="true" bindtap="toDazhuan"></mp-cell>
-    <mp-cell value="研究生在读" link="true" hover="true"></mp-cell>
-    <mp-cell value="研究生毕业或以上" link="true" hover="true"></mp-cell>
+    <mp-cell value="研究生在读" link="true" hover="true" bindtap="toNation" data-q="postgraduate"></mp-cell>
+    <mp-cell value="研究生毕业或以上" link="true" hover="true" bindtap="toInquiry"></mp-cell>
 </mp-cells>

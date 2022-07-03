@@ -1,0 +1,5 @@
+<!--pages/passport/postgraduate/postgraduate.wxml-->
+<mp-cells ext-class="my-cells" title="本科毕业于">
+    <mp-cell value="国内学校" link="true" hover="true" bindtap="toNext" data-babroad="no"></mp-cell>
+    <mp-cell value="国外学校" link="true" hover="true" bindtap="toNext" data-babroad="yes"></mp-cell>
+</mp-cells>

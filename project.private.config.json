@@ -36,6 +36,13 @@
           "query": "",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/exemption/exemption",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }

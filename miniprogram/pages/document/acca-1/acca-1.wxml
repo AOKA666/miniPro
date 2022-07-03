@@ -8,7 +8,7 @@
       </view>
       <view class="weui-cell__ft">{{item.tips}}</view>
   </view>
-  <navigator class="weui-cell weui-cell_active weui-cell_access weui-cell_link" url="/pages/tips/tips?abroad={{abroad}}">
+  <navigator class="weui-cell weui-cell_active weui-cell_access weui-cell_link" url="/pages/tips/tips?abroad={{abroad}}&q=ongoing">
     <text class="weui-cell__bd">下一步</text>
     <text class="weui-cell__ft"></text>
   </navigator>
@@ -20,7 +20,7 @@
       </view>
       <view class="weui-cell__ft">{{item.tips}}</view>
   </view>
-  <navigator class="weui-cell weui-cell_active weui-cell_access weui-cell_link" url="/pages/tips/tips?abroad={{abroad}}">
+  <navigator class="weui-cell weui-cell_active weui-cell_access weui-cell_link" url="/pages/tips/tips?abroad={{abroad}}&q=ongoing">
     <text class="weui-cell__bd">下一步</text>
     <text class="weui-cell__ft"></text>
   </navigator>

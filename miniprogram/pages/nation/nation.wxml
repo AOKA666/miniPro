@@ -3,6 +3,10 @@
     <mp-cell value="我在国内上学" link="true" hover="true" bindtap="toBachelor" data-abroad="no"></mp-cell>
     <mp-cell value="我在国外上学" link="true" hover="true" bindtap="toBachelor" data-abroad="yes"></mp-cell>
 </mp-cells>
+<mp-cells ext-class="my-cells" title="本科毕业于" wx:elif="{{q=='postgraduate'}}">
+    <mp-cell value="国内学校" link="true" hover="true" bindtap="toBachelor" data-abroad="no"></mp-cell>
+    <mp-cell value="国外学校" link="true" hover="true" bindtap="toBachelor" data-abroad="yes"></mp-cell>
+</mp-cells>
 <mp-cells ext-class="my-cells" title="在国内还是国外上学" wx:else>
     <mp-cell value="我在国内上学" link="true" hover="true" bindtap="toDocument" data-abroad="no"></mp-cell>
     <mp-cell value="我在国外上学" link="true" hover="true" bindtap="toDocument" data-abroad="yes"></mp-cell>

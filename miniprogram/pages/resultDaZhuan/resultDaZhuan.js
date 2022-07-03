@@ -1,17 +1,18 @@
-// pages/acca/index/index.js
+// pages/resultDaZhuan/resultDaZhuan.js
 Page({
-  mixins: [require('../../mixin/common')],
+
   /**
    * 页面的初始数据
    */
   data: {
-    wrap: false,
+
   },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    this.setData(options);
   },
 
   /**
@@ -25,13 +26,6 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow() {
-    wx.createSelectorQuery().select('#js_btn')
-      .boundingClientRect((rect) => {
-        if (rect.height > 48) {
-          this.setData({ wrap: true });
-        }
-      })
-      .exec();      
 
   },
 
@@ -46,7 +40,7 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload() {
-    
+
   },
 
   /**

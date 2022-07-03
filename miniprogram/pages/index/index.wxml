@@ -1,5 +1,22 @@
 <!--pages/acca/index/index.wxml-->
-<image class="img" src="../../images/homePage.jpeg"></image>
-<view class="title">ACCA</view>
-<view class="top_tip">材料收集指引</view>
-<view class="button" bindtap="next">开始</view>
+<page-meta root-font-size="system"></page-meta>
+<view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
+  <!-- <view class="page__hd my-title">
+      <view aria-role="heading" aria-level="1" class="page__title">ACCA</view>
+      <view class="page__desc">材料收集指引</view>
+  </view> -->
+  
+  <!-- <view class="button" bindtap="next">开始</view> -->
+  <view class="weui-bottom-fixed-opr-page  {{wrap ? 'weui-bottom-fixed-opr-page_btn-wrap' : ''}}">
+    <view class="weui-bottom-fixed-opr-page__content">
+      <view class="weui-bottom-fixed-opr-demo">
+        <view class="title">ACCA</view>
+        <view class="top_tip">材料收集指引</view>
+      </view>
+    </view>
+    <view class="weui-bottom-fixed-opr" id="js_opr">
+      <navigator class="weui-btn weui-btn_primary" id="js_btn" aria-role="button" url="/pages/status/status">开始查询</navigator>
+      <navigator class="weui-btn weui-btn_default" aria-role="button" url="/pages/show/show">材料示例</navigator>
+    </view>
+  </view>
+</view>

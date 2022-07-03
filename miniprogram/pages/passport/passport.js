@@ -20,10 +20,17 @@ Page({
     let has = e.currentTarget.dataset.has;
     let abroad = e.currentTarget.dataset.abroad;
     let q = e.currentTarget.dataset.q;
-    console.log('q,',q)
       wx.navigateTo({
         url: '/pages/resultACCA1/resultACCA1?has='+has+'&abroad='+abroad+'&q='+q,
       })
+  },
+  toResultMaster:function(e){
+    let has = e.currentTarget.dataset.has;
+    let babroad = e.currentTarget.dataset.babroad;
+    let pabroad = e.currentTarget.dataset.pabroad;
+    wx.navigateTo({
+      url: '/pages/resultMaster/resultMaster?has='+has+'&babroad='+babroad+'&pabroad='+pabroad,
+    })
   },
   /**
    * 生命周期函数--监听页面加载

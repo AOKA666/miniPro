@@ -1,6 +1,6 @@
 // pages/acca/status/status.js
 Page({
-
+  mixins: [require('../../mixin/common')],
   /**
    * 页面的初始数据
    */
@@ -28,6 +28,11 @@ Page({
       url: '/pages/document/dazhuan/dazhuan',
     })
   },
+  toInquiry:function(){
+    wx.navigateTo({
+      url: '/pages/postgraduate/postgraduate',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -53,7 +58,7 @@ Page({
    * 生命周期函数--监听页面隐藏
    */
   onHide() {
-
+    
   },
 
   /**

@@ -1,11 +1,21 @@
-// pages/acca/index/index.js
+// pages/document/show/show.js
 Page({
   mixins: [require('../../mixin/common')],
   /**
    * 页面的初始数据
    */
   data: {
-    wrap: false,
+    gallery: false,
+  },
+  close() {
+    this.setData({
+      gallery: false,
+    });
+  },
+  open() {
+    this.setData({
+      gallery: true,
+    });
   },
   /**
    * 生命周期函数--监听页面加载
@@ -25,13 +35,6 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow() {
-    wx.createSelectorQuery().select('#js_btn')
-      .boundingClientRect((rect) => {
-        if (rect.height > 48) {
-          this.setData({ wrap: true });
-        }
-      })
-      .exec();      
 
   },
 
@@ -46,7 +49,7 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload() {
-    
+
   },
 
   /**

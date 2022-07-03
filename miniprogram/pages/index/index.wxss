@@ -16,23 +16,25 @@
   left: 245rpx;
 }
 .title {
-  font-family: PingFang SC;
+  /* font-family: PingFang SC; */
   font-weight: 500;
   color: #ffffff;
-  font-size: 44rpx;
+  font-size: 80rpx;
   font-weight: bold;
-  margin-bottom: 40rpx;
-  position: absolute;
-  top: 50rpx;
-  left: 300rpx;
+  /* margin-bottom: 40rpx; */
+  text-align: center;
+  margin-top: 40rpx;
 }
 .top_tip {
-  font-size: 28rpx;
+  font-size: 35rpx;
   font-family: PingFang SC;
   font-weight: 400;
   color: #ffffff;
   margin-bottom: 28rpx;
-  position: absolute;
-  top: 130rpx;
-  left: 280rpx;
+  text-align: center;
+}
+.page{
+  background-image: url(https://636c-cloud1-4g4a7x52ed71d0e3-1312700920.tcb.qcloud.la/homepage2.jpeg?sign=faf4cbccdd1c36cbf5bed3cbaab293f8&t=1656842154);
+  background-position: 50% 100%;
+  background-size:cover;
 }

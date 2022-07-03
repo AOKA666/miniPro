@@ -1,0 +1,5 @@
+<!--pages/postgraduate2/postgraduate2.wxml-->
+<mp-cells ext-class="my-cells" title="研究生毕业于">
+    <mp-cell value="国内学校" link="true" hover="true" bindtap="toNext" data-babroad="{{babroad}}" data-pabroad="no"></mp-cell>
+    <mp-cell value="国外学校" link="true" hover="true" bindtap="toNext" data-babroad="{{babroad}}" data-pabroad="yes"></mp-cell>
+</mp-cells>

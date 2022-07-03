@@ -16,7 +16,13 @@
     "pages/exemption/exemption",
     "pages/document/acca-bachelor/acca-bachelor",
     "pages/resultBachelor/resultBachelor",
-    "pages/document/dazhuan/dazhuan"
+    "pages/document/dazhuan/dazhuan",
+    "pages/resultDaZhuan/resultDaZhuan",
+    "pages/postgraduate/postgraduate",
+    "pages/postgraduate2/postgraduate2",
+    "pages/document/acca-master/acca-master",
+    "pages/resultMaster/resultMaster",
+    "pages/show/show"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

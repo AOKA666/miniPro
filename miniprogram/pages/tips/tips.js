@@ -15,10 +15,11 @@ Page({
   toPassport:function(e){
     console.log(e);
     let fromacca = e.currentTarget.dataset.fromacca;
-    let abroad = e.currentTarget.dataset.abroad;
+    let babroad = e.currentTarget.dataset.babroad;
+    let pabroad = e.currentTarget.dataset.pabroad;
     let q = e.currentTarget.dataset.q;
     wx.navigateTo({
-      url: '/pages/passport/passport?fromacca='+fromacca+'&abroad='+abroad+'&q='+q,
+      url: '/pages/passport/passport?fromacca='+fromacca+'&babroad='+babroad+'&q='+q+'&pabroad='+pabroad,
     })
   },
   /**

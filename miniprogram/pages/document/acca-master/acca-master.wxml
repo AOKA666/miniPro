@@ -1,0 +1,85 @@
+<!--pages/document/acca-master/acca-master.wxml-->
+<view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
+<view class="weui-cells__title">需准备的学历材料</view>
+<view class="weui-cells weui-cells_after-title" wx:if="{{babroad=='yes'&&pabroad=='yes'}}">
+  <view class="weui-cell" aria-role="option" wx:for="{{dataList3}}" wx:key="id">
+      <view class="weui-cell__bd">
+        {{item.document}}
+      </view>
+      <view class="weui-cell__ft">{{item.tips}}</view>
+  </view>
+  <view class="weui-cell" aria-role="option" wx:for="{{dataList4}}" wx:key="id">
+      <view class="weui-cell__bd">
+        {{item.document}}
+      </view>
+      <view class="weui-cell__ft">{{item.tips}}</view>
+  </view>
+  <navigator class="weui-cell weui-cell_active weui-cell_access weui-cell_link" url="/pages/tips/tips?q=master&babroad={{babroad}}&pabroad={{pabroad}}">
+    <text class="weui-cell__bd">下一步</text>
+    <text class="weui-cell__ft"></text>
+  </navigator>
+</view>
+<view class="weui-cells weui-cells_after-title" wx:elif="{{babroad=='yes'&&pabroad=='no'}}">
+  <view class="weui-cell" aria-role="option" wx:for="{{dataList3}}" wx:key="id">
+      <view class="weui-cell__bd">
+        {{item.document}}
+      </view>
+      <view class="weui-cell__ft">{{item.tips}}</view>
+  </view>
+  <view class="weui-cell" aria-role="option" wx:for="{{dataList2}}" wx:key="id">
+      <view class="weui-cell__bd">
+        {{item.document}}
+      </view>
+      <view class="weui-cell__ft">{{item.tips}}</view>
+  </view>
+  <navigator class="weui-cell weui-cell_active weui-cell_access weui-cell_link" url="/pages/tips/tips?babroad={{babroad}}&q=master&pabroad={{pabroad}}">
+    <text class="weui-cell__bd">下一步</text>
+    <text class="weui-cell__ft"></text>
+  </navigator>
+</view>
+<view class="weui-cells weui-cells_after-title" wx:elif="{{babroad=='no'&&pabroad=='no'}}">
+  <view class="weui-cell" aria-role="option" wx:for="{{dataList}}" wx:key="id">
+      <view class="weui-cell__bd">
+        {{item.document}}
+      </view>
+      <view class="weui-cell__ft">{{item.tips}}</view>
+  </view>
+  <view class="weui-cell" aria-role="option" wx:for="{{dataList2}}" wx:key="id">
+      <view class="weui-cell__bd">
+        {{item.document}}
+      </view>
+      <view class="weui-cell__ft">{{item.tips}}</view>
+  </view>
+  <navigator class="weui-cell weui-cell_active weui-cell_access weui-cell_link" url="/pages/tips/tips?babroad={{babroad}}&q=master&pabroad={{pabroad}}">
+    <text class="weui-cell__bd">下一步</text>
+    <text class="weui-cell__ft"></text>
+  </navigator>
+</view>
+<view class="weui-cells weui-cells_after-title" wx:elif="{{babroad=='no'&&pabroad=='yes'}}">
+  <view class="weui-cell" aria-role="option" wx:for="{{dataList}}" wx:key="id">
+      <view class="weui-cell__bd">
+        {{item.document}}
+      </view>
+      <view class="weui-cell__ft">{{item.tips}}</view>
+  </view>
+  <view class="weui-cell" aria-role="option" wx:for="{{dataList4}}" wx:key="id">
+      <view class="weui-cell__bd">
+        {{item.document}}
+      </view>
+      <view class="weui-cell__ft">{{item.tips}}</view>
+  </view>
+  <navigator class="weui-cell weui-cell_active weui-cell_access weui-cell_link" url="/pages/tips/tips?babroad={{babroad}}&q=master&pabroad={{pabroad}}">
+    <text class="weui-cell__bd">下一步</text>
+    <text class="weui-cell__ft"></text>
+  </navigator>
+</view>
+<view class="page__bd page__bd_spacing">
+  <view class="icon-box">
+    <text title="提示" aria-describedby="tip_2" class="weui-icon-info weui-icon_msg" aria-role="img"></text>
+    <view class="icon-box__ctn" aria-hidden="true">
+      <view class="icon-box__title">提示</view>
+      <view class="icon-box__desc" id="tip_2">若不打算申请免试，则无需全部提交，任选本科或研究生阶段的材料提交即可。</view>
+    </view>
+  </view>
+</view>
+</view>

@@ -1,24 +1,52 @@
 <!--pages/resultACCA1/resultACCA1.wxml-->
-<view class="weui-panel__hd">最终结果</view>
-<view class="weui-panel__bd">
-  <view class="weui-media-box weui-media-box_text" aria-role="option">
-    <text class="weui-media-box__title">ACCA</text>
-    <view class="weui-media-box__desc">您的注册身份为ACCA</view>
+<view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
+  <view class="weui-panel__hd">最终结果</view>
+  <view class="weui-panel__bd">
+    <view class="weui-media-box weui-media-box_text" aria-role="option">
+      <text class="weui-media-box__title">ACCA</text>
+      <view class="weui-media-box__desc">您的注册身份为ACCA</view>
+    </view>
+  </view>
+  <navigator class="weui-cell weui-cell_active weui-cell_access weui-cell_link" wx:if="{{q=='bachelor'}}" url="/pages/resultBachelor/resultBachelor?has={{has}}&abroad={{abroad}}">
+    <text class="weui-cell__bd">查看需准备的材料</text>
+    <text class="weui-cell__ft"></text>
+  </navigator>
+  <navigator class="weui-cell weui-cell_active weui-cell_access weui-cell_link" wx:elif="{{q=='diploma'}}" url="/pages/resultDaZhuan/resultDaZhuan?has={{has}}&abroad={{abroad}}">
+    <text class="weui-cell__bd">查看需准备的材料</text>
+    <text class="weui-cell__ft"></text>
+  </navigator>
+  <navigator class="weui-cell weui-cell_active weui-cell_access weui-cell_link" wx:elif="{{q=='master'}}" url="/pages/resultMaster/resultMaster?has={{has}}&babroad={{babroad}}&pabroad={{pabroad}}">
+    <text class="weui-cell__bd">查看需准备的材料</text>
+    <text class="weui-cell__ft"></text>
+  </navigator>
+  <navigator class="weui-cell weui-cell_active weui-cell_access weui-cell_link" wx:else url="/pages/resultACCA2/resultACCA2?has={{has}}&abroad={{abroad}}">
+    <text class="weui-cell__bd">查看需准备的材料</text>
+    <text class="weui-cell__ft"></text>
+  </navigator>
+  <view class="weui-steps weui-steps_horizonal">
+  <view class="weui-steps__item weui-steps__item_success">
+			<view class="weui-steps__item__inner" style="display:none">
+				<text class="weui-steps__item__title">标题</text>
+				<text class="weui-steps__item__desc">描述内容详情</text>
+			</view>
+		</view>
+    <view class="weui-steps__item weui-steps__item_success">
+			<view class="weui-steps__item__inner" style="display:none">
+				<text class="weui-steps__item__title">标题</text>
+				<text class="weui-steps__item__desc">描述内容详情</text>
+			</view>
+		</view>
+    <view class="weui-steps__item weui-steps__item_success">
+			<view class="weui-steps__item__inner" style="display:none">
+				<text class="weui-steps__item__title">标题</text>
+				<text class="weui-steps__item__desc">描述内容详情</text>
+			</view>
+		</view>
+      <view class="weui-steps__item">
+        <view class="weui-steps__item__inner" style="display:none">
+          <text class="weui-steps__item__title">标题</text>
+          <text class="weui-steps__item__desc">描述内容详情</text>
+        </view>
+      </view>
   </view>
 </view>
-<navigator class="weui-cell weui-cell_active weui-cell_access weui-cell_link" wx:if="{{q=='bachelor'}}" url="/pages/resultBachelor/resultBachelor?has={{has}}&abroad={{abroad}}">
-  <text class="weui-cell__bd">查看需准备的材料</text>
-  <text class="weui-cell__ft"></text>
-</navigator>
-<navigator class="weui-cell weui-cell_active weui-cell_access weui-cell_link" wx:elif="{{q=='diploma'}}" url="/pages/resultDaZhuan/resultDaZhuan?has={{has}}&abroad={{abroad}}">
-  <text class="weui-cell__bd">查看需准备的材料</text>
-  <text class="weui-cell__ft"></text>
-</navigator>
-<navigator class="weui-cell weui-cell_active weui-cell_access weui-cell_link" wx:elif="{{q=='master'}}" url="/pages/resultMaster/resultMaster?has={{has}}&babroad={{abroad}}&pabroad={{pabroad}}">
-  <text class="weui-cell__bd">查看需准备的材料</text>
-  <text class="weui-cell__ft"></text>
-</navigator>
-<navigator class="weui-cell weui-cell_active weui-cell_access weui-cell_link" wx:else url="/pages/resultACCA2/resultACCA2?has={{has}}&abroad={{abroad}}">
-  <text class="weui-cell__bd">查看需准备的材料</text>
-  <text class="weui-cell__ft"></text>
-</navigator>

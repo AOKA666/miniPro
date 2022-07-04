@@ -1,6 +1,6 @@
 <!--pages/details-acca/details-acca.wxml-->
 <page-meta root-font-size="system"/>
-<view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
+<view class="page__bd">
   <view class="weui-article">
   <view aria-role="heading" aria-level="4" class="weui-article__h1">简单了解FIA和ACCA</view>  
 <view class="weui-article__section">

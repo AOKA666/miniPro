@@ -1,24 +1,87 @@
 <!--pages/document/show/show.wxml-->
 <page-meta root-font-size="system"/>
 <view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
-    <view class="page__hd">
-        <view class="page__title">部分材料示例</view>
-        <view class="page__desc">展示一些符合要求的材料</view>
+  <view class="page__hd">
+      <view class="page__title">部分材料示例</view>
+      <view class="page__desc">展示一些符合要求的材料</view>
+  </view>
+  <view class="page__bd">
+  <view class="weui-grids">
+		<navigator class="weui-grid" aria-role="button" url="javascript:" bindtap="open1">
+			<view class="weui-grid__icon">
+				<mp-icon icon="copy" color="black" size="{{25}}"></mp-icon>
+			</view>
+			<view class="weui-grid__label">身份证翻译件</view>
+		</navigator>
+		<navigator class="weui-grid" aria-role="button" url="javascript:" bindtap="open2">
+			<view class="weui-grid__icon">
+				<mp-icon icon="copy" color="black" size="{{25}}"></mp-icon>
+			</view>
+			<view class="weui-grid__label">在读证明</view>
+		</navigator>
+		<navigator class="weui-grid" aria-role="button" url="javascript:" bindtap="open3">
+			<view class="weui-grid__icon">
+				<mp-icon icon="copy" color="black" size="{{25}}"></mp-icon>
+			</view>
+			<view class="weui-grid__label">CMA成绩单</view>
+		</navigator>
+		<navigator class="weui-grid" aria-role="button" url="javascript:" bindtap="open4">
+			<view class="weui-grid__icon">
+				<mp-icon icon="copy" color="black" size="{{25}}"></mp-icon>
+			</view>
+			<view class="weui-grid__label">CMA工作经验</view>
+		</navigator>
+		<navigator class="weui-grid" aria-role="button" url="javascript:" bindtap="open5">
+			<view class="weui-grid__icon">
+				<mp-icon icon="copy" color="black" size="{{25}}"></mp-icon>
+			</view>
+			<view class="weui-grid__label">CPA</view>
+		</navigator>
+		<navigator class="weui-grid" aria-role="button" url="javascript:" bindtap="open6">
+			<view class="weui-grid__icon">
+				<mp-icon icon="copy" color="black" size="{{25}}"></mp-icon>
+			</view>
+			<view class="weui-grid__label">加速信</view>
+		</navigator>
+	</view>
+</view>
+  <view class="button-sp-area cell">
+			<navigator class="weui-btn_cell weui-btn_cell-primary" aria-role="button" url="/pages/exemption/exemption">有意向申请免试？</navigator>
+  </view>
+  <view wx:if="{{ID}}" aria-role="dialog" aria-modal="true" tabindex="0" class="weui-gallery fadeIn" bindtap="close1">
+    <view class="weui-gallery__info">1/6</view>
+    <view class="weui-gallery__img__wrp">
+        <image mode="aspectFit" class="weui-gallery__img" src="https://636c-cloud1-4g4a7x52ed71d0e3-1312700920.tcb.qcloud.la/%E8%BA%AB%E4%BB%BD%E8%AF%81%E7%BF%BB%E8%AF%91%E4%BB%B6%E7%A4%BA%E4%BE%8B.jpg?sign=1a068cd32936bbbce8e54db344f0404e&t=1656922501"></image>
     </view>
-    <view class="page__bd">
-        <view class="weui-btn-area">
-            <view aria-role="button" class="weui-btn weui-btn_default" bindtap="open">Gallery</view>
-        </view>
+  </view>
+  <view wx:if="{{Enrollment}}" aria-role="dialog" aria-modal="true" tabindex="0" class="weui-gallery fadeIn" bindtap="close2">
+    <view class="weui-gallery__info">2/6</view>
+    <view class="weui-gallery__img__wrp">
+        <image mode="aspectFit" class="weui-gallery__img" src="https://636c-cloud1-4g4a7x52ed71d0e3-1312700920.tcb.qcloud.la/%E5%9C%A8%E8%AF%BB%E8%AF%81%E6%98%8E%E7%A4%BA%E4%BE%8B.jpg?sign=f15fd9175cb2f8cc42aeedeb58f515c3&t=1656928049"></image>
     </view>
-    <view wx:if="{{gallery}}" aria-role="dialog" aria-modal="true" tabindex="0" class="weui-gallery fadeIn" bindtap="close">
-        <view class="weui-gallery__info">1/17</view>
-        <view class="weui-gallery__img__wrp">
-            <image mode="aspectFit" class="weui-gallery__img" src="../../images/002.jpg"></image>
-        </view>
-        <view class="weui-gallery__opr">
-            <view aria-role="button" aria-label="删除" class="weui-gallery__del">
-                <i class="weui-icon-delete weui-icon_gallery-delete"></i>
-            </view>
-        </view>
+  </view>
+  <view wx:if="{{CMA_Trans}}" aria-role="dialog" aria-modal="true" tabindex="0" class="weui-gallery fadeIn" bindtap="close3">
+    <view class="weui-gallery__info">3/6</view>
+    <view class="weui-gallery__img__wrp">
+        <image mode="aspectFit" class="weui-gallery__img" src="https://636c-cloud1-4g4a7x52ed71d0e3-1312700920.tcb.qcloud.la/CMA%E6%88%90%E7%BB%A9%E5%8D%95%E7%A4%BA%E4%BE%8B.png?sign=5448f5f3ef23de73f2773cc7783aa36e&t=1656922041"></image>
     </view>
+  </view>
+  <view wx:if="{{Working_Exp}}" aria-role="dialog" aria-modal="true" tabindex="0" class="weui-gallery fadeIn" bindtap="close4">
+    <view class="weui-gallery__info">4/6</view>
+    <view class="weui-gallery__img__wrp">
+        <image mode="aspectFit" class="weui-gallery__img" src="https://636c-cloud1-4g4a7x52ed71d0e3-1312700920.tcb.qcloud.la/CMA%E5%B7%A5%E4%BD%9C%E7%BB%8F%E9%AA%8C%E7%A4%BA%E4%BE%8B.png?sign=462a0429f044e3b6daba9906e10c0910&t=1656922576"></image>
+    </view>
+  </view>
+  <view wx:if="{{CPA}}" aria-role="dialog" aria-modal="true" tabindex="0" class="weui-gallery fadeIn" bindtap="close5">
+    <view class="weui-gallery__info">5/6</view>
+    <view class="weui-gallery__img__wrp">
+        <image mode="aspectFit" class="weui-gallery__img" src="https://636c-cloud1-4g4a7x52ed71d0e3-1312700920.tcb.qcloud.la/CPA%E7%A4%BA%E4%BE%8B.jpeg?sign=4be4016d487e800ed6f289aef8f45b59&t=1656928011"></image>
+    </view>
+  </view>
+  <view wx:if="{{Accelerate}}" aria-role="dialog" aria-modal="true" tabindex="0" class="weui-gallery fadeIn" bindtap="close6">
+    <view class="weui-gallery__info">6/6</view>
+    <view class="weui-gallery__img__wrp">
+        <image mode="aspectFit" class="weui-gallery__img" src="https://636c-cloud1-4g4a7x52ed71d0e3-1312700920.tcb.qcloud.la/%E5%8A%A0%E9%80%9F%E4%BF%A1%E7%A4%BA%E4%BE%8B.png?sign=a6bcc3898dd3591306c344949d79935a&t=1656922627"></image>
+    </view>
+  </view>
 </view>

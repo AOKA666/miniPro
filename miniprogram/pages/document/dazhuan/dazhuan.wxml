@@ -1,20 +1,48 @@
 <!--pages/document/dazhuan/dazhuan.wxml-->
-<view class="weui-cells__title">需准备的材料</view>
-<view class="weui-cells weui-cells_after-title">
-  <view class="weui-cell" aria-role="option">
-      <view class="weui-cell__bd">
-        毕业证原件
-      </view>
-      <view class="weui-cell__ft">带有盖章</view>
+<view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
+  <view class="weui-cells__title">需准备的材料</view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell" aria-role="option">
+        <view class="weui-cell__bd">
+          毕业证原件
+        </view>
+        <view class="weui-cell__ft">带有盖章</view>
+    </view>
+    <view class="weui-cell" aria-role="option">
+        <view class="weui-cell__bd">
+          毕业证翻译件
+        </view>
+        <view class="weui-cell__ft">带有盖章</view>
+    </view>
+    <navigator class="weui-cell weui-cell_active weui-cell_access weui-cell_link" url="/pages/tips/tips?abroad=no&q=diploma">
+      <text class="weui-cell__bd">下一步</text>
+      <text class="weui-cell__ft"></text>
+    </navigator>
   </view>
-  <view class="weui-cell" aria-role="option">
-      <view class="weui-cell__bd">
-        毕业证翻译件
+  <view class="weui-steps weui-steps_horizonal">
+  <view class="weui-steps__item weui-steps__item_success">
+			<view class="weui-steps__item__inner" style="display:none">
+				<text class="weui-steps__item__title">标题</text>
+				<text class="weui-steps__item__desc">描述内容详情</text>
+			</view>
+		</view>
+    <view class="weui-steps__item">
+        <view class="weui-steps__item__inner" style="display:none">
+          <text class="weui-steps__item__title">标题</text>
+          <text class="weui-steps__item__desc">描述内容详情</text>
+        </view>
       </view>
-      <view class="weui-cell__ft">带有盖章</view>
+    <view class="weui-steps__item">
+        <view class="weui-steps__item__inner" style="display:none">
+          <text class="weui-steps__item__title">标题</text>
+          <text class="weui-steps__item__desc">描述内容详情</text>
+        </view>
+      </view>
+      <view class="weui-steps__item">
+        <view class="weui-steps__item__inner" style="display:none">
+          <text class="weui-steps__item__title">标题</text>
+          <text class="weui-steps__item__desc">描述内容详情</text>
+        </view>
+      </view>
   </view>
-  <navigator class="weui-cell weui-cell_active weui-cell_access weui-cell_link" url="/pages/tips/tips?abroad=no&q=diploma">
-    <text class="weui-cell__bd">下一步</text>
-    <text class="weui-cell__ft"></text>
-  </navigator>
 </view>

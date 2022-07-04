@@ -69,3 +69,6 @@
     </view>
   </view>
 </view>
+<view class="button-sp-area">
+	<navigator class="weui-btn weui-btn_primary check-btn" aria-role="button" url="/pages/exemption/exemption">关于免试</navigator>
+</view>

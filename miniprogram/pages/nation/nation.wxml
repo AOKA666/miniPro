@@ -1,13 +1,41 @@
 <!--pages/nation/nation.wxml-->
-<mp-cells ext-class="my-cells" title="在国内还是国外上学" wx:if="{{q=='bachelor'}}">
-    <mp-cell value="我在国内上学" link="true" hover="true" bindtap="toBachelor" data-abroad="no"></mp-cell>
-    <mp-cell value="我在国外上学" link="true" hover="true" bindtap="toBachelor" data-abroad="yes"></mp-cell>
-</mp-cells>
-<mp-cells ext-class="my-cells" title="本科毕业于" wx:elif="{{q=='postgraduate'}}">
-    <mp-cell value="国内学校" link="true" hover="true" bindtap="toBachelor" data-abroad="no"></mp-cell>
-    <mp-cell value="国外学校" link="true" hover="true" bindtap="toBachelor" data-abroad="yes"></mp-cell>
-</mp-cells>
-<mp-cells ext-class="my-cells" title="在国内还是国外上学" wx:else>
-    <mp-cell value="我在国内上学" link="true" hover="true" bindtap="toDocument" data-abroad="no"></mp-cell>
-    <mp-cell value="我在国外上学" link="true" hover="true" bindtap="toDocument" data-abroad="yes"></mp-cell>
-</mp-cells>
+<view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
+  <mp-cells ext-class="my-cells" title="在国内还是国外上学" wx:if="{{q=='bachelor'}}">
+      <mp-cell value="我在国内上学" link="true" hover="true" bindtap="toBachelor" data-abroad="no"></mp-cell>
+      <mp-cell value="我在国外上学" link="true" hover="true" bindtap="toBachelor" data-abroad="yes"></mp-cell>
+  </mp-cells>
+  <mp-cells ext-class="my-cells" title="本科毕业于" wx:elif="{{q=='postgraduate'}}">
+      <mp-cell value="国内学校" link="true" hover="true" bindtap="toBachelor" data-abroad="no"></mp-cell>
+      <mp-cell value="国外学校" link="true" hover="true" bindtap="toBachelor" data-abroad="yes"></mp-cell>
+  </mp-cells>
+  <mp-cells ext-class="my-cells" title="在国内还是国外上学" wx:else>
+      <mp-cell value="我在国内上学" link="true" hover="true" bindtap="toDocument" data-abroad="no"></mp-cell>
+      <mp-cell value="我在国外上学" link="true" hover="true" bindtap="toDocument" data-abroad="yes"></mp-cell>
+  </mp-cells>
+  <view class="weui-steps weui-steps_horizonal">
+      <view class="weui-steps__item">
+        <view class="weui-steps__item__inner" style="display:none">
+          <text class="weui-steps__item__title">标题</text>
+          <text class="weui-steps__item__desc">描述内容详情</text>
+        </view>
+      </view>
+      <view class="weui-steps__item">
+        <view class="weui-steps__item__inner" style="display:none">
+          <text class="weui-steps__item__title">标题</text>
+          <text class="weui-steps__item__desc">描述内容详情</text>
+        </view>
+      </view>
+      <view class="weui-steps__item">
+        <view class="weui-steps__item__inner" style="display:none">
+          <text class="weui-steps__item__title">标题</text>
+          <text class="weui-steps__item__desc">描述内容详情</text>
+        </view>
+      </view>
+      <view class="weui-steps__item">
+        <view class="weui-steps__item__inner" style="display:none">
+          <text class="weui-steps__item__title">标题</text>
+          <text class="weui-steps__item__desc">描述内容详情</text>
+        </view>
+      </view>
+  </view>
+</view>

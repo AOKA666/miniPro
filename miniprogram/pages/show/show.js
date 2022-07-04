@@ -5,16 +5,71 @@ Page({
    * 页面的初始数据
    */
   data: {
-    gallery: false,
+    ID: false,
+    Enrollment: false,
+    CMA_Trans: false,
+    Working_Exp: false,
+    CPA: false,
+    Accelerate: false
   },
-  close() {
+  close1() {
     this.setData({
-      gallery: false,
+      ID: false,
     });
   },
-  open() {
+  close2() {
     this.setData({
-      gallery: true,
+      Enrollment: false,
+    });
+  },
+  close3() {
+    this.setData({
+      CMA_Trans: false,
+    });
+  },
+  close4() {
+    this.setData({
+      Working_Exp: false,
+    });
+  },
+  close5() {
+    this.setData({
+      CPA: false,
+    });
+  },
+  close6() {
+    this.setData({
+      Accelerate: false,
+    });
+  },
+  open1() {
+    this.setData({
+      ID: true,
+    });
+  },
+  open2() {
+    this.setData({
+      Enrollment: true,
+    });
+  },
+  open3() {
+    this.setData({
+      CMA_Trans: true,
+    });
+  },
+  open4() {
+    this.setData({
+      Working_Exp: true,
+    });
+  },
+  open5() {
+    this.setData({
+      CPA: true,
+    });
+  },
+  open6() {
+    this.setData({
+      Accelerate: true,
     });
   },
   /**

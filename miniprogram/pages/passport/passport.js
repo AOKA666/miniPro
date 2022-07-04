@@ -28,8 +28,9 @@ Page({
     let has = e.currentTarget.dataset.has;
     let babroad = e.currentTarget.dataset.babroad;
     let pabroad = e.currentTarget.dataset.pabroad;
+    let q = e.currentTarget.dataset.q;
     wx.navigateTo({
-      url: '/pages/resultMaster/resultMaster?has='+has+'&babroad='+babroad+'&pabroad='+pabroad,
+      url: '/pages/resultACCA1/resultACCA1?has='+has+'&babroad='+babroad+'&pabroad='+pabroad+'&q='+q,
     })
   },
   /**

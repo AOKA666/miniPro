@@ -1,7 +1,35 @@
 <!--pages/enrollment/enrollment.wxml-->
-<mp-cells ext-class="my-cells" title="具体在读情况是">
-    <mp-cell value="大一在读" link="true" hover="true" bindtap="toPassport"></mp-cell>
-    <mp-cell value="大一完成或大二在读" link="true" hover="true" bindtap="toNation"></mp-cell>
-    <mp-cell value="大二完成或大三在读" link="true" hover="true" bindtap="toNation"></mp-cell>
-    <mp-cell value="大三完成或大四在读" link="true" hover="true" bindtap="toNation"></mp-cell>
-</mp-cells>
+<view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
+  <mp-cells ext-class="my-cells" title="具体在读情况是">
+      <mp-cell value="大一在读" link="true" hover="true" bindtap="toPassport"></mp-cell>
+      <mp-cell value="大一完成或大二在读" link="true" hover="true" bindtap="toNation"></mp-cell>
+      <mp-cell value="大二完成或大三在读" link="true" hover="true" bindtap="toNation"></mp-cell>
+      <mp-cell value="大三完成或大四在读" link="true" hover="true" bindtap="toNation"></mp-cell>
+  </mp-cells>
+  <view class="weui-steps weui-steps_horizonal">
+      <view class="weui-steps__item">
+        <view class="weui-steps__item__inner" style="display:none">
+          <text class="weui-steps__item__title">标题</text>
+          <text class="weui-steps__item__desc">描述内容详情</text>
+        </view>
+      </view>
+      <view class="weui-steps__item">
+        <view class="weui-steps__item__inner" style="display:none">
+          <text class="weui-steps__item__title">标题</text>
+          <text class="weui-steps__item__desc">描述内容详情</text>
+        </view>
+      </view>
+      <view class="weui-steps__item">
+        <view class="weui-steps__item__inner" style="display:none">
+          <text class="weui-steps__item__title">标题</text>
+          <text class="weui-steps__item__desc">描述内容详情</text>
+        </view>
+      </view>
+      <view class="weui-steps__item">
+        <view class="weui-steps__item__inner" style="display:none">
+          <text class="weui-steps__item__title">标题</text>
+          <text class="weui-steps__item__desc">描述内容详情</text>
+        </view>
+      </view>
+  </view>
+</view>

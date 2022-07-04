@@ -215,7 +215,7 @@
   <text title="提示" aria-describedby="tip_2" class="weui-icon-info weui-icon_msg" aria-role="img"></text>
   <view class="icon-box__ctn" aria-hidden="true">
     <view class="icon-box__title">提示</view>
-    <view class="icon-box__desc" id="tip_2">照片、扫描件、pdf均可，需保证清晰无反光。学校若无法直接提供英文材料，需要联系翻译公司进行翻译</view>
+    <view class="icon-box__desc" id="tip_2">照片、扫描件、pdf均可，需保证清晰无反光。若不申请免试，本科或研究生两个阶段只需任选其一提交相应材料即可。</view>
   </view>
 </view>
 </view>

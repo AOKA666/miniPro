@@ -1,4 +1,5 @@
 <!--pages/document/acca-bachelor/acca-bachelor.wxml-->
+<view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
 <view class="weui-cells__title">需准备的材料</view>
 <view class="weui-cells weui-cells_after-title" wx:if="{{abroad=='yes'}}">
   <view class="weui-cell" aria-role="option" wx:for="{{dataList2}}" wx:key="id">
@@ -23,4 +24,31 @@
     <text class="weui-cell__bd">下一步</text>
     <text class="weui-cell__ft"></text>
   </navigator>
+</view>
+<view class="weui-steps weui-steps_horizonal">
+  <view class="weui-steps__item weui-steps__item_success">
+			<view class="weui-steps__item__inner" style="display:none">
+				<text class="weui-steps__item__title">标题</text>
+				<text class="weui-steps__item__desc">描述内容详情</text>
+			</view>
+		</view>
+    <view class="weui-steps__item">
+        <view class="weui-steps__item__inner" style="display:none">
+          <text class="weui-steps__item__title">标题</text>
+          <text class="weui-steps__item__desc">描述内容详情</text>
+        </view>
+      </view>
+    <view class="weui-steps__item">
+        <view class="weui-steps__item__inner" style="display:none">
+          <text class="weui-steps__item__title">标题</text>
+          <text class="weui-steps__item__desc">描述内容详情</text>
+        </view>
+      </view>
+      <view class="weui-steps__item">
+        <view class="weui-steps__item__inner" style="display:none">
+          <text class="weui-steps__item__title">标题</text>
+          <text class="weui-steps__item__desc">描述内容详情</text>
+        </view>
+      </view>
+  </view>
 </view>

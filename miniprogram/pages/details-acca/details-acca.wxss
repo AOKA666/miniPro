@@ -1,2 +1,2 @@
 /* pages/details-acca/details-acca.wxss */
-.page{background-color:#f6f6f6;}image{margin:4px 0}
+.page{background-color:var(--weui-BG-2)}image{margin:4px 0}

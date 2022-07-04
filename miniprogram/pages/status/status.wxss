@@ -1,2 +1,2 @@
 /* pages/acca/status/status.wxss */
-.weui-steps{margin:40px auto 80px;max-width:50%}
+.page{background-color:var(--weui-BG-2)}.weui-steps{margin:40px auto 80px;max-width:50%}

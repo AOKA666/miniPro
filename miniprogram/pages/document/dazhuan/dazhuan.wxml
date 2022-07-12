@@ -1,6 +1,6 @@
 <!--pages/document/dazhuan/dazhuan.wxml-->
 <view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
-  <view class="weui-cells__title">需准备的材料</view>
+  <view class="weui-cells__title">您可能需要准备</view>
   <view class="weui-cells weui-cells_after-title">
     <view class="weui-cell" aria-role="option">
         <view class="weui-cell__bd">

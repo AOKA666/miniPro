@@ -24,7 +24,7 @@
   </mp-cells>
   <mp-cells ext-class="my-cells" title="请选择下一步操作" wx:elif="{{q=='master'}}">
       <mp-cell value="我决定注册FIA" link="true" hover="true" bindtap="toPassport"></mp-cell>
-      <mp-cell value="我决定注册ACCA" link="true" hover="true" bindtap="toPassport" data-fromacca="yes" data-babroad="{{babroad}}" data-pabroad="{{pabroad}}" data-q="master"></mp-cell>
+      <mp-cell value="我决定注册ACCA" link="true" hover="true" bindtap="toPassport2" data-fromacca="yes" data-babroad="{{babroad}}" data-pabroad="{{pabroad}}" data-q="master"></mp-cell>
       <mp-cell value="告诉我FIA和ACCA的区别" link="true" hover="true" bindtap="toDetails"></mp-cell>
   </mp-cells>
   <mp-cells ext-class="my-cells" title="请选择下一步操作" wx:else>

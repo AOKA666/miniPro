@@ -1,7 +1,7 @@
 <!--pages/document/acca-master/acca-master.wxml-->
 <view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
   <view class="page__bd">
-  <view class="weui-cells__title">需准备的学历材料</view>
+  <view class="weui-cells__title">您可能需要准备</view>
   <view class="weui-cells weui-cells_after-title" wx:if="{{babroad=='yes'&&pabroad=='yes'}}">
     <view class="weui-cell" aria-role="option" wx:for="{{dataList3}}" wx:key="id">
       <view class="weui-cell__bd">

@@ -12,7 +12,7 @@ Page({
       url: '/pages/details-acca/details-acca',
     })
   },
-  toPassport:function(e){
+  toPassport2:function(e){
     console.log(e);
     let fromacca = e.currentTarget.dataset.fromacca;
     let babroad = e.currentTarget.dataset.babroad;
@@ -20,6 +20,14 @@ Page({
     let q = e.currentTarget.dataset.q;
     wx.navigateTo({
       url: '/pages/passport/passport?fromacca='+fromacca+'&babroad='+babroad+'&q='+q+'&pabroad='+pabroad,
+    })
+  },
+  toPassport:function(e){
+    let fromacca = e.currentTarget.dataset.fromacca;
+    let abroad = e.currentTarget.dataset.abroad;
+    let q = e.currentTarget.dataset.q;
+    wx.navigateTo({
+      url: '/pages/passport/passport?fromacca='+fromacca+'&abroad='+abroad+'&q='+q,
     })
   },
   /**

@@ -1,0 +1,36 @@
+<!--pages/attention/id/id.wxml-->
+<view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
+  <view class="weui-article">
+    <view aria-role="heading" aria-level="4" class="weui-article__h1">身份材料注意事项</view>
+    <view class="weui-article__section">
+      <view class="weui-article__h2">说明</view>
+      <view class="weui-article__section">
+        <view class="weui-article__ul">
+          <view class="weui-article__li">身份证或护照均可，都要保证在<text class="strong">有效期内</text></view>
+          <view class="weui-article__li text-emphasize">
+            身份证要提供<text class="strong">原件</text>正反面照片+英文翻译件，<text class="strong">不可自行翻译，需要联系翻译公司翻译并盖章</text>
+          </view>
+          <view class="weui-article__li">
+            若公司或学校提供翻译服务，可以联系公司或学校翻译，并盖公司或学校的章
+          </view>
+          <view class="weui-article__li text-emphasize">护照无需翻译，直接提供信息页<text class="strong">彩色件即可</text>（扫描或拍照）</view>
+          <view class="weui-article__li">
+            所有材料提供电子版即可，无需邮寄
+          </view>
+        </view>
+      </view>
+      <view class="weui-article__h2">示例</view>
+      <view class="weui-article__section">
+        <view class="weui-article__ul">
+          <view class="weui-article__li">身份证原件+英文翻译件</view>
+          <image src="https://636c-cloud1-4g4a7x52ed71d0e3-1312700920.tcb.qcloud.la/%E8%BA%AB%E4%BB%BD%E8%AF%81%E7%BF%BB%E8%AF%91%E4%BB%B6%E7%A4%BA%E4%BE%8B.jpg?sign=1a068cd32936bbbce8e54db344f0404e&t=1656922501"></image>
+        </view>
+        <view class="weui-article__ul">
+          <view class="weui-article__li">护照</view>
+          <image src="https://636c-cloud1-4g4a7x52ed71d0e3-1312700920.tcb.qcloud.la/passport.jpg?sign=5e8870ad361385ee6e51ed3b87782724&t=1658717030"></image>
+        </view>
+      </view>
+      
+    </view>
+  </view>
+</view>

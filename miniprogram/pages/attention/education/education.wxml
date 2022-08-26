@@ -1,0 +1,52 @@
+<!--pages/attention/education/education.wxml-->
+<view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
+  <view class="weui-article">
+    <view aria-role="heading" aria-level="4" class="weui-article__h1">学历材料注意事项</view>
+    <view class="weui-article__section">
+      <view class="weui-article__h2">说明</view>
+      <view class="weui-article__section">
+        <view class="weui-article__ul">
+          <view class="weui-article__li">所有学历材料都需要提供原件+英文翻译（若原件就是英文版则不需要再翻译）</view>
+          <view class="weui-article__li">
+            <text class="strong">不可自行翻译，需要联系翻译公司翻译并盖章</text>
+          </view>
+          <view class="weui-article__li warning">
+            若您提交在读证明：
+            <view class="weui-article__ol">
+              <view class="weui-article__li">英文版本一定体现在读本科，最好用bachelor, undergraduate这个词英国官方不是很认可</view>
+              <view class="weui-article__li">若需要申请免试，英文版本中一定要明确说明<text class="strong">“已完成几年学业，预计何时毕业，毕业将获得什么学位”</text>，这三点非常重要，尤其是<text class="strong">已完成几年学业</text></view>
+              <view class="weui-article__li">已完成几年学业要明确说明，例如：he has completed full xx years of study</view>
+            </view>
+          </view>
+          <view class="weui-article__li">
+            所有材料提供电子版即可，无需邮寄
+          </view>
+        </view>
+      </view>
+      <view class="weui-article__h2">示例</view>
+      <view class="weui-article__section">
+        <view class="weui-article__ul">
+          <view class="weui-article__li">在读证明翻译件</view>
+          <image src="https://636c-cloud1-4g4a7x52ed71d0e3-1312700920.tcb.qcloud.la/%E5%9C%A8%E8%AF%BB%E8%AF%81%E6%98%8E%E7%A4%BA%E4%BE%8B.jpg?sign=71f7fa6bb57241b584ccea791229a0c5&t=1658718408"></image>
+        </view>
+        <view class="weui-article__ul">
+          <view class="weui-article__li">成绩单</view>
+          <image src="https://636c-cloud1-4g4a7x52ed71d0e3-1312700920.tcb.qcloud.la/transcript.jpg?sign=f44352e820822558ff77ca2591aedb3f&t=1658719336"></image>
+        </view>
+        <view class="weui-article__ul">
+          <view class="weui-article__li">国内毕业证</view>
+          <image src="https://636c-cloud1-4g4a7x52ed71d0e3-1312700920.tcb.qcloud.la/%E5%9B%BD%E5%86%85%E6%AF%95%E4%B8%9A%E8%AF%81.jpg?sign=e5c04fccf48efbd6d79cd15596ce03a1&t=1658719929"></image>
+        </view>
+        <view class="weui-article__ul">
+          <view class="weui-article__li">国内学位证</view>
+          <image src="https://636c-cloud1-4g4a7x52ed71d0e3-1312700920.tcb.qcloud.la/%E5%9B%BD%E5%86%85%E5%AD%A6%E4%BD%8D%E8%AF%81.jpg?sign=7456a5973b2c9589a071023bf5f321a9&t=1658720188"></image>
+        </view>
+        <view class="weui-article__ul">
+          <view class="weui-article__li">国外毕业证</view>
+          <image src="https://636c-cloud1-4g4a7x52ed71d0e3-1312700920.tcb.qcloud.la/%E5%9B%BD%E5%A4%96%E6%AF%95%E4%B8%9A%E8%AF%81.jpg?sign=86ff349db7c63b4e9670f96c5a8770e0&t=1658720309"></image>
+        </view>
+      </view>
+      
+    </view>
+  </view>
+</view>

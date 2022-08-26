@@ -22,7 +22,9 @@
     "pages/postgraduate2/postgraduate2",
     "pages/document/acca-master/acca-master",
     "pages/resultMaster/resultMaster",
-    "pages/show/show"
+    "pages/show/show",
+    "pages/attention/id/id",
+    "pages/attention/education/education"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

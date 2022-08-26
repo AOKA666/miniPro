@@ -1,0 +1,7 @@
+/* pages/attention/id/id.wxss */
+.strong{
+  font-weight: bold;
+}
+.text-emphasize{
+  color:coral;
+}

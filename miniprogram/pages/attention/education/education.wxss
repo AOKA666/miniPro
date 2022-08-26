@@ -1,0 +1,7 @@
+/* pages/attention/education/education.wxss */
+.strong{
+  font-weight: bold;
+}
+.warning{
+  color:coral;
+}

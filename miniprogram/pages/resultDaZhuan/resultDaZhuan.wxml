@@ -7,18 +7,34 @@
             护照原件
           </view>
           <view class="weui-cell__ft">需在有效期内</view>
+      </view>
+      <view class="weui-cells weui-cells_after-title">
+        <navigator aria-labelledby="js_cell_l1_bd" url="/pages/attention/id/id" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+            <view class="weui-cell__bd" id="js_cell_l1_bd" aria-hidden="true">
+              <view class="detail">身份材料注意事项</view>
+            </view>
+            <view class="weui-cell__ft weui-cell__ft_in-access" aria-hidden="true"></view>
+        </navigator>
       </view>     
       <view class="weui-cell" aria-role="option">
           <view class="weui-cell__bd">
             毕业证原件
           </view>
-          <view class="weui-cell__ft">需在有效期内</view>
+          <view class="weui-cell__ft">带有学校盖章</view>
       </view>
       <view class="weui-cell" aria-role="option">
           <view class="weui-cell__bd">
             毕业证翻译件
           </view>
-          <view class="weui-cell__ft">需在有效期内</view>
+          <view class="weui-cell__ft">带有翻译公司盖章</view>
+      </view>
+      <view class="weui-cells weui-cells_after-title">
+        <navigator aria-labelledby="js_cell_l1_bd" url="/pages/attention/education/education" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+            <view class="weui-cell__bd" id="js_cell_l1_bd" aria-hidden="true">
+              <view class="detail">学历材料注意事项</view>
+            </view>
+            <view class="weui-cell__ft weui-cell__ft_in-access" aria-hidden="true"></view>
+        </navigator>
       </view>
       <view class="weui-cell" aria-role="option">
           <view class="weui-cell__bd">
@@ -40,17 +56,33 @@
           </view>
           <view class="weui-cell__ft">需在有效期内</view>
       </view>
+      <view class="weui-cells weui-cells_after-title">
+        <navigator aria-labelledby="js_cell_l1_bd" url="/pages/attention/id/id" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+            <view class="weui-cell__bd" id="js_cell_l1_bd" aria-hidden="true">
+              <view class="detail">身份材料注意事项</view>
+            </view>
+            <view class="weui-cell__ft weui-cell__ft_in-access" aria-hidden="true"></view>
+        </navigator>
+      </view>
       <view class="weui-cell" aria-role="option">
           <view class="weui-cell__bd">
             毕业证原件
           </view>
-          <view class="weui-cell__ft">需在有效期内</view>
+          <view class="weui-cell__ft">带有学校盖章</view>
       </view>
       <view class="weui-cell" aria-role="option">
           <view class="weui-cell__bd">
             毕业证翻译件
           </view>
-          <view class="weui-cell__ft">需在有效期内</view>
+          <view class="weui-cell__ft">带有翻译公司盖章</view>
+      </view>
+      <view class="weui-cells weui-cells_after-title">
+        <navigator aria-labelledby="js_cell_l1_bd" url="/pages/attention/education/education" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+            <view class="weui-cell__bd" id="js_cell_l1_bd" aria-hidden="true">
+              <view class="detail">学历材料注意事项</view>
+            </view>
+            <view class="weui-cell__ft weui-cell__ft_in-access" aria-hidden="true"></view>
+        </navigator>
       </view>
       <view class="weui-cell" aria-role="option">
           <view class="weui-cell__bd">

@@ -8,6 +8,14 @@
       </view>
       <view class="weui-cell__ft">{{item.tips}}</view>
   </view>
+  <view class="weui-cells weui-cells_after-title">
+    <navigator aria-labelledby="js_cell_l1_bd" url="/pages/attention/id/id" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__bd" id="js_cell_l1_bd" aria-hidden="true">
+          <view class="detail">身份材料注意事项</view>
+        </view>
+        <view class="weui-cell__ft weui-cell__ft_in-access" aria-hidden="true"></view>
+    </navigator>
+  </view>
   <view class="weui-cell" aria-role="option" wx:for="{{BachelorList}}" wx:key="id">
       <view class="weui-cell__bd">
         {{item.document}}
@@ -19,6 +27,14 @@
         {{item.document}}
       </view>
       <view class="weui-cell__ft">{{item.tips}}</view>
+  </view>
+  <view class="weui-cells weui-cells_after-title">
+    <navigator aria-labelledby="js_cell_l1_bd" url="/pages/attention/education/education" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__bd" id="js_cell_l1_bd" aria-hidden="true">
+          <view class="detail">学历材料注意事项</view>
+        </view>
+        <view class="weui-cell__ft weui-cell__ft_in-access" aria-hidden="true"></view>
+    </navigator>
   </view>
   <view class="weui-cell" aria-role="option">
       <view class="weui-cell__bd">
@@ -34,6 +50,14 @@
       </view>
       <view class="weui-cell__ft">{{item.tips}}</view>
   </view>
+  <view class="weui-cells weui-cells_after-title">
+    <navigator aria-labelledby="js_cell_l1_bd" url="/pages/attention/id/id" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__bd" id="js_cell_l1_bd" aria-hidden="true">
+          <view class="detail">身份材料注意事项</view>
+        </view>
+        <view class="weui-cell__ft weui-cell__ft_in-access" aria-hidden="true"></view>
+    </navigator>
+  </view>
   <view class="weui-cell" aria-role="option" wx:for="{{BachelorList}}" wx:key="id">
       <view class="weui-cell__bd">
         {{item.document}}
@@ -45,6 +69,14 @@
         {{item.document}}
       </view>
       <view class="weui-cell__ft">{{item.tips}}</view>
+  </view>
+  <view class="weui-cells weui-cells_after-title">
+    <navigator aria-labelledby="js_cell_l1_bd" url="/pages/attention/education/education" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__bd" id="js_cell_l1_bd" aria-hidden="true">
+          <view class="detail">学历材料注意事项</view>
+        </view>
+        <view class="weui-cell__ft weui-cell__ft_in-access" aria-hidden="true"></view>
+    </navigator>
   </view>
   <view class="weui-cell" aria-role="option">
       <view class="weui-cell__bd">
@@ -60,6 +92,14 @@
       </view>
       <view class="weui-cell__ft">{{item.tips}}</view>
   </view>
+  <view class="weui-cells weui-cells_after-title">
+    <navigator aria-labelledby="js_cell_l1_bd" url="/pages/attention/id/id" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__bd" id="js_cell_l1_bd" aria-hidden="true">
+          <view class="detail">身份材料注意事项</view>
+        </view>
+        <view class="weui-cell__ft weui-cell__ft_in-access" aria-hidden="true"></view>
+    </navigator>
+  </view>
   <view class="weui-cell" aria-role="option" wx:for="{{AbroadList1}}" wx:key="id">
       <view class="weui-cell__bd">
         {{item.document}}
@@ -71,6 +111,14 @@
         {{item.document}}
       </view>
       <view class="weui-cell__ft">{{item.tips}}</view>
+  </view>
+  <view class="weui-cells weui-cells_after-title">
+    <navigator aria-labelledby="js_cell_l1_bd" url="/pages/attention/education/education" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__bd" id="js_cell_l1_bd" aria-hidden="true">
+          <view class="detail">学历材料注意事项</view>
+        </view>
+        <view class="weui-cell__ft weui-cell__ft_in-access" aria-hidden="true"></view>
+    </navigator>
   </view>
   <view class="weui-cell" aria-role="option">
       <view class="weui-cell__bd">
@@ -86,6 +134,14 @@
       </view>
       <view class="weui-cell__ft">{{item.tips}}</view>
   </view>
+  <view class="weui-cells weui-cells_after-title">
+    <navigator aria-labelledby="js_cell_l1_bd" url="/pages/attention/id/id" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__bd" id="js_cell_l1_bd" aria-hidden="true">
+          <view class="detail">身份材料注意事项</view>
+        </view>
+        <view class="weui-cell__ft weui-cell__ft_in-access" aria-hidden="true"></view>
+    </navigator>
+  </view>
   <view class="weui-cell" aria-role="option" wx:for="{{AbroadList1}}" wx:key="id">
       <view class="weui-cell__bd">
         {{item.document}}
@@ -97,6 +153,14 @@
         {{item.document}}
       </view>
       <view class="weui-cell__ft">{{item.tips}}</view>
+  </view>
+  <view class="weui-cells weui-cells_after-title">
+    <navigator aria-labelledby="js_cell_l1_bd" url="/pages/attention/education/education" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__bd" id="js_cell_l1_bd" aria-hidden="true">
+          <view class="detail">学历材料注意事项</view>
+        </view>
+        <view class="weui-cell__ft weui-cell__ft_in-access" aria-hidden="true"></view>
+    </navigator>
   </view>
   <view class="weui-cell" aria-role="option">
       <view class="weui-cell__bd">
@@ -124,6 +188,14 @@
       </view>
       <view class="weui-cell__ft">{{item.tips}}</view>
   </view>
+  <view class="weui-cells weui-cells_after-title">
+    <navigator aria-labelledby="js_cell_l1_bd" url="/pages/attention/education/education" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__bd" id="js_cell_l1_bd" aria-hidden="true">
+          <view class="detail">学历材料注意事项</view>
+        </view>
+        <view class="weui-cell__ft weui-cell__ft_in-access" aria-hidden="true"></view>
+    </navigator>
+  </view>
   <view class="weui-cell" aria-role="option">
       <view class="weui-cell__bd">
         注册信息确认表
@@ -138,6 +210,14 @@
       </view>
       <view class="weui-cell__ft">{{item.tips}}</view>
   </view>
+  <view class="weui-cells weui-cells_after-title">
+    <navigator aria-labelledby="js_cell_l1_bd" url="/pages/attention/id/id" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__bd" id="js_cell_l1_bd" aria-hidden="true">
+          <view class="detail">身份材料注意事项</view>
+        </view>
+        <view class="weui-cell__ft weui-cell__ft_in-access" aria-hidden="true"></view>
+    </navigator>
+  </view>
   <view class="weui-cell" aria-role="option" wx:for="{{BachelorList}}" wx:key="id">
       <view class="weui-cell__bd">
         {{item.document}}
@@ -149,6 +229,14 @@
         {{item.document}}
       </view>
       <view class="weui-cell__ft">{{item.tips}}</view>
+  </view>
+  <view class="weui-cells weui-cells_after-title">
+    <navigator aria-labelledby="js_cell_l1_bd" url="/pages/attention/education/education" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__bd" id="js_cell_l1_bd" aria-hidden="true">
+          <view class="detail">学历材料注意事项</view>
+        </view>
+        <view class="weui-cell__ft weui-cell__ft_in-access" aria-hidden="true"></view>
+    </navigator>
   </view>
   <view class="weui-cell" aria-role="option">
       <view class="weui-cell__bd">
@@ -164,6 +252,14 @@
       </view>
       <view class="weui-cell__ft">{{item.tips}}</view>
   </view>
+  <view class="weui-cells weui-cells_after-title">
+    <navigator aria-labelledby="js_cell_l1_bd" url="/pages/attention/id/id" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__bd" id="js_cell_l1_bd" aria-hidden="true">
+          <view class="detail">身份材料注意事项</view>
+        </view>
+        <view class="weui-cell__ft weui-cell__ft_in-access" aria-hidden="true"></view>
+    </navigator>
+  </view>
   <view class="weui-cell" aria-role="option" wx:for="{{AbroadList1}}" wx:key="id">
       <view class="weui-cell__bd">
         {{item.document}}
@@ -175,6 +271,14 @@
         {{item.document}}
       </view>
       <view class="weui-cell__ft">{{item.tips}}</view>
+  </view>
+  <view class="weui-cells weui-cells_after-title">
+    <navigator aria-labelledby="js_cell_l1_bd" url="/pages/attention/education/education" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__bd" id="js_cell_l1_bd" aria-hidden="true">
+          <view class="detail">学历材料注意事项</view>
+        </view>
+        <view class="weui-cell__ft weui-cell__ft_in-access" aria-hidden="true"></view>
+    </navigator>
   </view>
   <view class="weui-cell" aria-role="option">
       <view class="weui-cell__bd">
@@ -190,6 +294,14 @@
       </view>
       <view class="weui-cell__ft">{{item.tips}}</view>
   </view>
+  <view class="weui-cells weui-cells_after-title">
+    <navigator aria-labelledby="js_cell_l1_bd" url="/pages/attention/id/id" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__bd" id="js_cell_l1_bd" aria-hidden="true">
+          <view class="detail">身份材料注意事项</view>
+        </view>
+        <view class="weui-cell__ft weui-cell__ft_in-access" aria-hidden="true"></view>
+    </navigator>
+  </view>
   <view class="weui-cell" aria-role="option" wx:for="{{AbroadList1}}" wx:key="id">
       <view class="weui-cell__bd">
         {{item.document}}
@@ -201,6 +313,14 @@
         {{item.document}}
       </view>
       <view class="weui-cell__ft">{{item.tips}}</view>
+  </view>
+  <view class="weui-cells weui-cells_after-title">
+    <navigator aria-labelledby="js_cell_l1_bd" url="/pages/attention/education/education" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__bd" id="js_cell_l1_bd" aria-hidden="true">
+          <view class="detail">学历材料注意事项</view>
+        </view>
+        <view class="weui-cell__ft weui-cell__ft_in-access" aria-hidden="true"></view>
+    </navigator>
   </view>
   <view class="weui-cell" aria-role="option">
       <view class="weui-cell__bd">
